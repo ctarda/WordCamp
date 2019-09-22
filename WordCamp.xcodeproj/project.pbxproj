@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8113CEC232FE28B004DD6A4 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8113CEB232FE28B004DD6A4 /* EventViewModel.swift */; };
+		D8113CEE232FECA9004DD6A4 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8113CED232FECA9004DD6A4 /* RemoteImage.swift */; };
+		D8113CF0232FEDA6004DD6A4 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */; };
+		D8113CF2232FF0CB004DD6A4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */; };
+		D824CD582336439C00437CC9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824CD572336439C00437CC9 /* SearchBarView.swift */; };
+		D8D7CFDA232D648300687E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFD9232D648300687E4B /* AppDelegate.swift */; };
+		D8D7CFDC232D648300687E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFDB232D648300687E4B /* SceneDelegate.swift */; };
+		D8D7CFDE232D648300687E4B /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFDD232D648300687E4B /* ScheduleList.swift */; };
+		D8D7CFE0232D648500687E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7CFDF232D648500687E4B /* Assets.xcassets */; };
+		D8D7CFE3232D648500687E4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D7CFE2232D648500687E4B /* Preview Assets.xcassets */; };
+		D8D7CFE6232D648600687E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D7CFE4232D648600687E4B /* LaunchScreen.storyboard */; };
+		D8D7CFFD232D657600687E4B /* WordCampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFFC232D657600687E4B /* WordCampList.swift */; };
+		D8D7D004232D7B3100687E4B /* Date+WordCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */; };
+		D8D7D00A232D928800687E4B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D009232D928800687E4B /* MapView.swift */; };
+		D8D7D00C232D96D100687E4B /* WordCampTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D00B232D96D100687E4B /* WordCampTitle.swift */; };
+		D8D7D00E232D972800687E4B /* VenueCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D00D232D972800687E4B /* VenueCoordinates.swift */; };
+		D8D7D010232D980A00687E4B /* WordCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D00F232D980A00687E4B /* WordCamp.swift */; };
+		D8D7D013232D98D500687E4B /* WordCampDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D012232D98D500687E4B /* WordCampDetail.swift */; };
+		D8D7D015232D991400687E4B /* WordCampListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D014232D991400687E4B /* WordCampListView.swift */; };
+		D8D7D017232D9BB400687E4B /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D016232D9BB400687E4B /* SafariView.swift */; };
+		D8D7D01B232D9F7000687E4B /* WordCampContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D01A232D9F7000687E4B /* WordCampContent.swift */; };
+		D8D7D01D232DA0DB00687E4B /* String+WordCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D01C232DA0DB00687E4B /* String+WordCamp.swift */; };
+		D8D7D01F232E6CB100687E4B /* DefaultWordCampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */; };
+		D8D7D022232E6DEB00687E4B /* WordCampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */; };
+		D8D7D02C232EBF9000687E4B /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D02B232EBF9000687E4B /* Media.swift */; };
+		D8EEA5E62330362F006C32D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8EEA5E82330362F006C32D0 /* Localizable.strings */; };
+		D8EEA5EA2331A075006C32D0 /* WordCampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5E92331A075006C32D0 /* WordCampService.swift */; };
+		D8EEA5EC2331A4C4006C32D0 /* EventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5EB2331A4C4006C32D0 /* EventViewModelTests.swift */; };
+		D8EEA5EE2331A4D4006C32D0 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5ED2331A4D4006C32D0 /* Mocks.swift */; };
+		D8EEA5F22331AB55006C32D0 /* WordCampDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F12331AB55006C32D0 /* WordCampDetailTests.swift */; };
+		D8EEA5F62331ACC7006C32D0 /* DefaultMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */; };
+		D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F72331ACD8006C32D0 /* MediaService.swift */; };
+		D8EEA5FA2331B4F0006C32D0 /* WordCampsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F92331B4F0006C32D0 /* WordCampsViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8D7CFED232D648600687E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D7CFCE232D648300687E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D7CFD5232D648300687E4B;
+			remoteInfo = WordCamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8113CEB232FE28B004DD6A4 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		D8113CED232FECA9004DD6A4 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		D824CD572336439C00437CC9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		D8D7CFD6232D648300687E4B /* WordCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D7CFD9232D648300687E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8D7CFDB232D648300687E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D8D7CFDD232D648300687E4B /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		D8D7CFDF232D648500687E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8D7CFE2232D648500687E4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8D7CFE5232D648600687E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8D7CFE7232D648600687E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D7CFEC232D648600687E4B /* WordCampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D7CFF2232D648600687E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D7CFFC232D657600687E4B /* WordCampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampList.swift; sourceTree = "<group>"; };
+		D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+WordCamp.swift"; sourceTree = "<group>"; };
+		D8D7D009232D928800687E4B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D8D7D00B232D96D100687E4B /* WordCampTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampTitle.swift; sourceTree = "<group>"; };
+		D8D7D00D232D972800687E4B /* VenueCoordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCoordinates.swift; sourceTree = "<group>"; };
+		D8D7D00F232D980A00687E4B /* WordCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCamp.swift; sourceTree = "<group>"; };
+		D8D7D012232D98D500687E4B /* WordCampDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampDetail.swift; sourceTree = "<group>"; };
+		D8D7D014232D991400687E4B /* WordCampListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampListView.swift; sourceTree = "<group>"; };
+		D8D7D016232D9BB400687E4B /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		D8D7D01A232D9F7000687E4B /* WordCampContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampContent.swift; sourceTree = "<group>"; };
+		D8D7D01C232DA0DB00687E4B /* String+WordCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WordCamp.swift"; sourceTree = "<group>"; };
+		D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWordCampService.swift; sourceTree = "<group>"; };
+		D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampsViewModel.swift; sourceTree = "<group>"; };
+		D8D7D02B232EBF9000687E4B /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		D8EEA5E72330362F006C32D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D8EEA5E92331A075006C32D0 /* WordCampService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampService.swift; sourceTree = "<group>"; };
+		D8EEA5EB2331A4C4006C32D0 /* EventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModelTests.swift; sourceTree = "<group>"; };
+		D8EEA5ED2331A4D4006C32D0 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		D8EEA5F12331AB55006C32D0 /* WordCampDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampDetailTests.swift; sourceTree = "<group>"; };
+		D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMediaService.swift; sourceTree = "<group>"; };
+		D8EEA5F72331ACD8006C32D0 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		D8EEA5F92331B4F0006C32D0 /* WordCampsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampsViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D7CFD3232D648300687E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7CFE9232D648600687E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D7CFCD232D648300687E4B = {
+			isa = PBXGroup;
+			children = (
+				D8D7CFD8232D648300687E4B /* WordCamp */,
+				D8D7CFEF232D648600687E4B /* WordCampTests */,
+				D8D7CFD7232D648300687E4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D7CFD7232D648300687E4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7CFD6232D648300687E4B /* WordCamp.app */,
+				D8D7CFEC232D648600687E4B /* WordCampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D7CFD8232D648300687E4B /* WordCamp */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D011232D987500687E4B /* Extensions */,
+				D8D7D008232D926800687E4B /* View */,
+				D8D7D020232E6DC100687E4B /* ViewModel */,
+				D8D7CFFE232D699700687E4B /* Networking */,
+				D8D7CFFB232D654D00687E4B /* Model */,
+				D8D7CFD9232D648300687E4B /* AppDelegate.swift */,
+				D8D7CFDB232D648300687E4B /* SceneDelegate.swift */,
+				D8D7CFDF232D648500687E4B /* Assets.xcassets */,
+				D8EEA5E323303610006C32D0 /* Resources */,
+				D8D7CFE4232D648600687E4B /* LaunchScreen.storyboard */,
+				D8D7CFE7232D648600687E4B /* Info.plist */,
+				D8D7CFE1232D648500687E4B /* Preview Content */,
+			);
+			path = WordCamp;
+			sourceTree = "<group>";
+		};
+		D8D7CFE1232D648500687E4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7CFE2232D648500687E4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8D7CFEF232D648600687E4B /* WordCampTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5F02331AB1A006C32D0 /* ViewModels */,
+				D8EEA5EF2331AB11006C32D0 /* Views */,
+				D8D7CFF2232D648600687E4B /* Info.plist */,
+				D8EEA5ED2331A4D4006C32D0 /* Mocks.swift */,
+			);
+			path = WordCampTests;
+			sourceTree = "<group>";
+		};
+		D8D7CFFB232D654D00687E4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7CFFC232D657600687E4B /* WordCampList.swift */,
+				D8D7D00B232D96D100687E4B /* WordCampTitle.swift */,
+				D8D7D00D232D972800687E4B /* VenueCoordinates.swift */,
+				D8D7D00F232D980A00687E4B /* WordCamp.swift */,
+				D8D7D01A232D9F7000687E4B /* WordCampContent.swift */,
+				D8D7D02B232EBF9000687E4B /* Media.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8D7CFFE232D699700687E4B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5F72331ACD8006C32D0 /* MediaService.swift */,
+				D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */,
+				D8EEA5E92331A075006C32D0 /* WordCampService.swift */,
+				D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */,
+				D8113CED232FECA9004DD6A4 /* RemoteImage.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D8D7D008232D926800687E4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
+				D8D7D009232D928800687E4B /* MapView.swift */,
+				D8D7D012232D98D500687E4B /* WordCampDetail.swift */,
+				D8D7D014232D991400687E4B /* WordCampListView.swift */,
+				D8D7D016232D9BB400687E4B /* SafariView.swift */,
+				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
+				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
+				D824CD572336439C00437CC9 /* SearchBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8D7D011232D987500687E4B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */,
+				D8D7D01C232DA0DB00687E4B /* String+WordCamp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8D7D020232E6DC100687E4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
+				D8113CEB232FE28B004DD6A4 /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8EEA5E323303610006C32D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5E82330362F006C32D0 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8EEA5EF2331AB11006C32D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5F12331AB55006C32D0 /* WordCampDetailTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8EEA5F02331AB1A006C32D0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5F92331B4F0006C32D0 /* WordCampsViewModelTests.swift */,
+				D8EEA5EB2331A4C4006C32D0 /* EventViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D7CFD5232D648300687E4B /* WordCamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D7CFF5232D648600687E4B /* Build configuration list for PBXNativeTarget "WordCamp" */;
+			buildPhases = (
+				D8D7CFD2232D648300687E4B /* Sources */,
+				D8D7CFD3232D648300687E4B /* Frameworks */,
+				D8D7CFD4232D648300687E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordCamp;
+			productName = WordCamp;
+			productReference = D8D7CFD6232D648300687E4B /* WordCamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8D7CFEB232D648600687E4B /* WordCampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D7CFF8232D648600687E4B /* Build configuration list for PBXNativeTarget "WordCampTests" */;
+			buildPhases = (
+				D8D7CFE8232D648600687E4B /* Sources */,
+				D8D7CFE9232D648600687E4B /* Frameworks */,
+				D8D7CFEA232D648600687E4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D7CFEE232D648600687E4B /* PBXTargetDependency */,
+			);
+			name = WordCampTests;
+			productName = WordCampTests;
+			productReference = D8D7CFEC232D648600687E4B /* WordCampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D7CFCE232D648300687E4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = automattic;
+				TargetAttributes = {
+					D8D7CFD5232D648300687E4B = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					D8D7CFEB232D648600687E4B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = D8D7CFD5232D648300687E4B;
+					};
+				};
+			};
+			buildConfigurationList = D8D7CFD1232D648300687E4B /* Build configuration list for PBXProject "WordCamp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8D7CFCD232D648300687E4B;
+			productRefGroup = D8D7CFD7232D648300687E4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D7CFD5232D648300687E4B /* WordCamp */,
+				D8D7CFEB232D648600687E4B /* WordCampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D7CFD4232D648300687E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D7CFE6232D648600687E4B /* LaunchScreen.storyboard in Resources */,
+				D8EEA5E62330362F006C32D0 /* Localizable.strings in Resources */,
+				D8D7CFE3232D648500687E4B /* Preview Assets.xcassets in Resources */,
+				D8D7CFE0232D648500687E4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7CFEA232D648600687E4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D7CFD2232D648300687E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D7CFDA232D648300687E4B /* AppDelegate.swift in Sources */,
+				D8D7D00A232D928800687E4B /* MapView.swift in Sources */,
+				D8D7D00C232D96D100687E4B /* WordCampTitle.swift in Sources */,
+				D8D7CFDC232D648300687E4B /* SceneDelegate.swift in Sources */,
+				D8D7CFFD232D657600687E4B /* WordCampList.swift in Sources */,
+				D824CD582336439C00437CC9 /* SearchBarView.swift in Sources */,
+				D8113CEE232FECA9004DD6A4 /* RemoteImage.swift in Sources */,
+				D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */,
+				D8D7D017232D9BB400687E4B /* SafariView.swift in Sources */,
+				D8D7D015232D991400687E4B /* WordCampListView.swift in Sources */,
+				D8D7D004232D7B3100687E4B /* Date+WordCamp.swift in Sources */,
+				D8EEA5EA2331A075006C32D0 /* WordCampService.swift in Sources */,
+				D8113CEC232FE28B004DD6A4 /* EventViewModel.swift in Sources */,
+				D8D7CFDE232D648300687E4B /* ScheduleList.swift in Sources */,
+				D8D7D010232D980A00687E4B /* WordCamp.swift in Sources */,
+				D8113CF0232FEDA6004DD6A4 /* RemoteImageView.swift in Sources */,
+				D8D7D00E232D972800687E4B /* VenueCoordinates.swift in Sources */,
+				D8D7D01B232D9F7000687E4B /* WordCampContent.swift in Sources */,
+				D8D7D013232D98D500687E4B /* WordCampDetail.swift in Sources */,
+				D8D7D02C232EBF9000687E4B /* Media.swift in Sources */,
+				D8D7D01F232E6CB100687E4B /* DefaultWordCampService.swift in Sources */,
+				D8113CF2232FF0CB004DD6A4 /* CircleImage.swift in Sources */,
+				D8EEA5F62331ACC7006C32D0 /* DefaultMediaService.swift in Sources */,
+				D8D7D01D232DA0DB00687E4B /* String+WordCamp.swift in Sources */,
+				D8D7D022232E6DEB00687E4B /* WordCampsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D7CFE8232D648600687E4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EEA5EC2331A4C4006C32D0 /* EventViewModelTests.swift in Sources */,
+				D8EEA5EE2331A4D4006C32D0 /* Mocks.swift in Sources */,
+				D8EEA5F22331AB55006C32D0 /* WordCampDetailTests.swift in Sources */,
+				D8EEA5FA2331B4F0006C32D0 /* WordCampsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D7CFEE232D648600687E4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D7CFD5232D648300687E4B /* WordCamp */;
+			targetProxy = D8D7CFED232D648600687E4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8D7CFE4232D648600687E4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D7CFE5232D648600687E4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D8EEA5E82330362F006C32D0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EEA5E72330362F006C32D0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D7CFF3232D648600687E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8D7CFF4232D648600687E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D7CFF6232D648600687E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WordCamp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UD4LXU79B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WordCamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.WordCamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8D7CFF7232D648600687E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WordCamp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UD4LXU79B;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WordCamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.WordCamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8D7CFF9232D648600687E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UD4LXU79B;
+				INFOPLIST_FILE = WordCampTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.WordCampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordCamp.app/WordCamp";
+			};
+			name = Debug;
+		};
+		D8D7CFFA232D648600687E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UD4LXU79B;
+				INFOPLIST_FILE = WordCampTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.WordCampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordCamp.app/WordCamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D7CFD1232D648300687E4B /* Build configuration list for PBXProject "WordCamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D7CFF3232D648600687E4B /* Debug */,
+				D8D7CFF4232D648600687E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D7CFF5232D648600687E4B /* Build configuration list for PBXNativeTarget "WordCamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D7CFF6232D648600687E4B /* Debug */,
+				D8D7CFF7232D648600687E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D7CFF8232D648600687E4B /* Build configuration list for PBXNativeTarget "WordCampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D7CFF9232D648600687E4B /* Debug */,
+				D8D7CFFA232D648600687E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D7CFCE232D648300687E4B /* Project object */;
+}
