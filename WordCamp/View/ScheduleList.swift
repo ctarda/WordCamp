@@ -22,7 +22,7 @@ struct ScheduleList: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {
         ScheduleList(viewModel: WordCampsViewModel())
     }
