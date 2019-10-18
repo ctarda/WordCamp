@@ -10,3 +10,9 @@ struct CircleImage: View {
                 Circle().stroke(Color.white, lineWidth: 4))
     }
 }
+
+struct CircleImage_Previews: PreviewProvider {
+    static var previews: some View {
+        CircleImage(url: "").frame(width: 100, height: 100)
+    }
+}
