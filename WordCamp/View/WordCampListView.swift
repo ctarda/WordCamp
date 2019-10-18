@@ -20,6 +20,12 @@ struct WordCampListView: View {
 struct WordCampListView_Preview: PreviewProvider {
     static var previews: some View {
         let viewModel = EventViewModel(event: PreviewData.wordCamp())
-        return WordCampListView(event: viewModel)
+        return Group {
+            WordCampListView(event: viewModel)
+            // Hack: Embeded in navigation view to get the device to show in dark mode as well
+            NavigationView {
+                WordCampListView(event: viewModel)
+            }.colorScheme(.dark)
+        }
     }
 }
