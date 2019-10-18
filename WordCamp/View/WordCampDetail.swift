@@ -68,3 +68,10 @@ struct OpenLinkButton: View {
         }
     }
 }
+
+struct WordCampDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        let viewModel = EventViewModel(event: PreviewData.wordCamp())
+        return WordCampDetail(event: viewModel)
+    }
+}
