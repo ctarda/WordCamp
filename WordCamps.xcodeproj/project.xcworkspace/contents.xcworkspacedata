@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WordCamp.xcodeproj">
+      location = "self:/Users/ctarda/Development/WordCamp/WordCamps.xcodeproj">
    </FileRef>
 </Workspace>

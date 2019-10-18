@@ -1,6 +1,6 @@
 import XCTest
 import Combine
-@testable import WordCamp
+@testable import WordCamps
 
 struct Mocks {
     static let id = 1234

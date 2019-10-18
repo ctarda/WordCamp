@@ -1,6 +1,6 @@
 import XCTest
 import Combine
-@testable import WordCamp
+@testable import WordCamps
 
 final class WordCampsViewModelTests: XCTestCase {
     var viewModel: WordCampsViewModel!

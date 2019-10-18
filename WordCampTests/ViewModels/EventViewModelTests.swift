@@ -1,6 +1,6 @@
 import XCTest
 import Combine
-@testable import WordCamp
+@testable import WordCamps
 
 final class EventViewModelTests: XCTestCase {
     private var event: WordCamp!

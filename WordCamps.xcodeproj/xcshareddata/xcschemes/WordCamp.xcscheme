@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8D7CFD5232D648300687E4B"
-               BuildableName = "WordCamp.app"
-               BlueprintName = "WordCamp"
-               ReferencedContainer = "container:WordCamp.xcodeproj">
+               BuildableName = "WordCamps.app"
+               BlueprintName = "WordCamps"
+               ReferencedContainer = "container:WordCamps.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8D7CFEB232D648600687E4B"
-               BuildableName = "WordCampTests.xctest"
-               BlueprintName = "WordCampTests"
-               ReferencedContainer = "container:WordCamp.xcodeproj">
+               BuildableName = "WordCampsTests.xctest"
+               BlueprintName = "WordCampsTests"
+               ReferencedContainer = "container:WordCamps.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D7CFD5232D648300687E4B"
-            BuildableName = "WordCamp.app"
-            BlueprintName = "WordCamp"
-            ReferencedContainer = "container:WordCamp.xcodeproj">
+            BuildableName = "WordCamps.app"
+            BlueprintName = "WordCamps"
+            ReferencedContainer = "container:WordCamps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D7CFD5232D648300687E4B"
-            BuildableName = "WordCamp.app"
-            BlueprintName = "WordCamp"
-            ReferencedContainer = "container:WordCamp.xcodeproj">
+            BuildableName = "WordCamps.app"
+            BlueprintName = "WordCamps"
+            ReferencedContainer = "container:WordCamps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
