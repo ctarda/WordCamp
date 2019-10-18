@@ -16,3 +16,10 @@ struct WordCampListView: View {
         }
     }
 }
+
+struct WordCampListView_Preview: PreviewProvider {
+    static var previews: some View {
+        let viewModel = EventViewModel(event: PreviewData.wordCamp())
+        return WordCampListView(event: viewModel)
+    }
+}
