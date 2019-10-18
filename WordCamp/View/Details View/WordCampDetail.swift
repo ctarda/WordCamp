@@ -25,6 +25,14 @@ struct WordCampDetail: View {
 struct WordCampDetail_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = EventViewModel(event: PreviewData.wordCamp())
-        return WordCampDetail(event: viewModel)
+        return Group {
+            WordCampDetail(event: viewModel)
+                .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
+                .previewDisplayName("iPhone 11 Pro Max")
+
+            WordCampDetail(event: viewModel)
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (11-inch)"))
+                .previewDisplayName("iPad Pro (11-inch)")
+        }
     }
 }
