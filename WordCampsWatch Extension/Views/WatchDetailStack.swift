@@ -20,3 +20,10 @@ struct WatchDetailStack: View {
         }
     }
 }
+
+struct WatchDetailStack_Preview: PreviewProvider {
+    static var previews: some View {
+        let viewModel = WatchEventViewModel(event: PreviewData.wordCamp())
+        return WatchDetailStack(event: viewModel)
+    }
+}
