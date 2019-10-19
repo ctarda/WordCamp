@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WordCampListView: View {
-    let event: EventViewModel
+    let event: PhoneEventViewModel
 
     var body: some View {
         HStack(spacing: 12) {
@@ -19,7 +19,7 @@ struct WordCampListView: View {
 
 struct WordCampListView_Preview: PreviewProvider {
     static var previews: some View {
-        let viewModel = EventViewModel(event: PreviewData.wordCamp())
+        let viewModel = PhoneEventViewModel(event: PreviewData.wordCamp())
         return Group {
             WordCampListView(event: viewModel)
             // Hack: Embeded in navigation view to get the device to show in dark mode as well

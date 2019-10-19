@@ -23,7 +23,7 @@ final class WordCampsViewModel: ObservableObject {
         }
     }
 
-    var events: [EventViewModel] {
+    var events: [PhoneEventViewModel] {
         if textFilter == "" {
             return wordCampList.eventViewModels
         }

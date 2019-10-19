@@ -4,12 +4,12 @@ import Combine
 
 final class EventViewModelTests: XCTestCase {
     private var event: WordCamp!
-    private var viewModel: EventViewModel!
+    private var viewModel: PhoneEventViewModel!
 
     override func setUp() {
         super.setUp()
         event = Mocks.defaultEvent
-        viewModel = EventViewModel(event: event, mediaService: MockMediaService())
+        viewModel = PhoneEventViewModel(event: event, mediaService: MockMediaService())
     }
 
     override func tearDown() {

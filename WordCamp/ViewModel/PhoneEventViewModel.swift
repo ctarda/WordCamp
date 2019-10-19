@@ -2,12 +2,12 @@ import Foundation
 import Combine
 import CoreLocation
 
-final class EventViewModel: ObservableObject, Identifiable {
+final class PhoneEventViewModel: ObservableObject, Identifiable {
     private let event: WordCamp
     private var cancellabe: AnyCancellable?
     private let mediaService: MediaService
 
-    var objectWillChange = PassthroughSubject<EventViewModel, Never>()
+    var objectWillChange = PassthroughSubject<PhoneEventViewModel, Never>()
 
     private var media = Media(thumbnail: "") {
         didSet {

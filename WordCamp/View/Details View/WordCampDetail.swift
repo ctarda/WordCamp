@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WordCampDetail: View {
-    let event: EventViewModel
+    let event: PhoneEventViewModel
 
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct WordCampDetail: View {
 
 struct WordCampDetail_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = EventViewModel(event: PreviewData.wordCamp())
+        let viewModel = PhoneEventViewModel(event: PreviewData.wordCamp())
         return Group {
             WordCampDetail(event: viewModel)
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))

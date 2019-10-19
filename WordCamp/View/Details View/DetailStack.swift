@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct DetailStack: View {
-    let event: EventViewModel
+    let event: PhoneEventViewModel
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -29,7 +29,7 @@ struct DetailStack: View {
 
 struct DetailStack_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = EventViewModel(event: PreviewData.wordCamp())
+        let viewModel = PhoneEventViewModel(event: PreviewData.wordCamp())
         return DetailStack(event: viewModel)
     }
 }

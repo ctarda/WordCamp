@@ -4,13 +4,13 @@ import Combine
 
 final class WordCampDetailTests: XCTestCase {
     private var event: WordCamp!
-    private var viewModel: EventViewModel!
+    private var viewModel: PhoneEventViewModel!
     private var view: WordCampDetail!
 
     override func setUp() {
         super.setUp()
         event = Mocks.defaultEvent
-        viewModel = EventViewModel(event: event, mediaService: MockMediaService())
+        viewModel = PhoneEventViewModel(event: event, mediaService: MockMediaService())
         view = WordCampDetail(event: viewModel)
     }
 
