@@ -6,7 +6,7 @@ struct TVWordCampDetail: View {
     var body: some View {
         VStack {
             MapView(coordinate: event.locationCoordinates)
-                .frame(height: CGFloat(200.0))
+                .frame(height: CGFloat(400.0))
 
             CircleImage(url: event.thumbnail)
                 .frame(width: CGFloat(100.0), height: CGFloat(100.0), alignment: .center)

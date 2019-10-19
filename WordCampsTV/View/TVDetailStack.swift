@@ -14,10 +14,6 @@ struct TVDetailStack: View {
             }
             Text(event.venueName).font(.headline)
             Text(event.venueAddress).font(.headline)
-            Text(event.readableContent)
-                .font(.body)
-                .lineLimit(Int.max)
-
         }
         .padding()
     }
