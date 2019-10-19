@@ -16,6 +16,13 @@ struct WatchDetailStack: View {
                     .fixedSize(horizontal: false, vertical: true)
                 Text(event.venueAddress).font(.headline)
                     .fixedSize(horizontal: false, vertical: true)
+                Spacer()
+                HStack {
+                    Spacer()
+                    MapView(coordinate: event.locationCoordinates)
+                        .frame(width: 120, height: 120, alignment: .center)
+                    Spacer()
+                }
             }
         }
     }

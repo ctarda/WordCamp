@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import CoreLocation
 
 final class WatchEventViewModel: ObservableObject, Identifiable, EventViewModel {
     private let event: WordCamp
@@ -37,6 +38,10 @@ final class WatchEventViewModel: ObservableObject, Identifiable, EventViewModel 
 
     private var mediaID: Int {
         return event.featuredMedia
+    }
+
+    var locationCoordinates: CLLocationCoordinate2D {
+        return event.venueCoordinates.locationCoordinates
     }
 
     init(event: WordCamp) {
