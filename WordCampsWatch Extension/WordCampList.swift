@@ -8,14 +8,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WordCampList: View {
     var body: some View {
         Text("Hello Cesar")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct WordCampList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        WordCampList()
     }
 }
