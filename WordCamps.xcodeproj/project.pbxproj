@@ -32,7 +32,6 @@
 		D8D42EA0235B185700C4201B /* VenueCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D00D232D972800687E4B /* VenueCoordinates.swift */; };
 		D8D42EA3235B18BA00C4201B /* WatchEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EA2235B18BA00C4201B /* WatchEventViewModel.swift */; };
 		D8D42EA4235B18EF00C4201B /* Date+WordCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */; };
-		D8D42EA5235B18EF00C4201B /* String+WordCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D01C232DA0DB00687E4B /* String+WordCamp.swift */; };
 		D8D42EA7235B195400C4201B /* WatchWordCampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EA6235B195400C4201B /* WatchWordCampsViewModel.swift */; };
 		D8D42EAA235B198D00C4201B /* WatchWordCampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EA9235B198D00C4201B /* WatchWordCampList.swift */; };
 		D8D42EAD235B1B1800C4201B /* WatchWordCampDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EAC235B1B1800C4201B /* WatchWordCampDetail.swift */; };
@@ -614,7 +613,6 @@
 				D8D42E79235B141C00C4201B /* ComplicationController.swift in Sources */,
 				D8D42EA7235B195400C4201B /* WatchWordCampsViewModel.swift in Sources */,
 				D8D42EB1235B1BA400C4201B /* WatchWordCampListView.swift in Sources */,
-				D8D42EA5235B18EF00C4201B /* String+WordCamp.swift in Sources */,
 				D8D42E9D235B184100C4201B /* WordCamp.swift in Sources */,
 				D8D42EA0235B185700C4201B /* VenueCoordinates.swift in Sources */,
 				D8D42EAD235B1B1800C4201B /* WatchWordCampDetail.swift in Sources */,

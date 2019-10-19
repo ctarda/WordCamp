@@ -15,10 +15,6 @@ final class WatchEventViewModel: ObservableObject, Identifiable {
         return event.title.rendered
     }
 
-    var readableContent: String {
-        return event.content.rendered.strippedHTML
-    }
-
     var location: String {
         return event.location
     }

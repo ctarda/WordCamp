@@ -8,7 +8,6 @@ struct WatchScheduleList: View {
                 WatchWordCampListView(event: event)
             }
         }
-        //.listStyle(.carousel)
     }
 
     init(viewModel: WatchWordCampsViewModel) {
