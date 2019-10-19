@@ -10,8 +10,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<WordCampList> {
-    override var body: WordCampList {
-        return WordCampList()
+class HostingController: WKHostingController<WatchScheduleList> {
+    override var body: WatchScheduleList {
+        return WatchScheduleList(viewModel: WatchWordCampsViewModel())
     }
 }
