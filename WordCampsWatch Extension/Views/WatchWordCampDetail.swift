@@ -9,3 +9,11 @@ struct WatchWordCampDetail: View {
         }
     }
 }
+
+
+struct WatchWordCampDetail_Preview: PreviewProvider {
+    static var previews: some View {
+        let viewModel = WatchEventViewModel(event: PreviewData.wordCamp())
+        return WatchWordCampDetail(event: viewModel)
+    }
+}
