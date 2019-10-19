@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ScheduleList: View {
-    @ObservedObject var viewModel: WordCampsViewModel
+    @ObservedObject var viewModel: WordCampsViewModel<PhoneEventViewModel>
 
     var body: some View {
         NavigationView {
@@ -17,13 +17,13 @@ struct ScheduleList: View {
         }
     }
 
-    init(viewModel: WordCampsViewModel) {
+    init(viewModel: WordCampsViewModel<PhoneEventViewModel>) {
         self.viewModel = viewModel
     }
 }
 
 struct ScheduleList_Previews: PreviewProvider {
     static var previews: some View {
-        ScheduleList(viewModel: WordCampsViewModel())
+        ScheduleList(viewModel: WordCampsViewModel<PhoneEventViewModel>())
     }
 }

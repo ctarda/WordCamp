@@ -2,7 +2,7 @@ import Foundation
 import Combine
 import CoreLocation
 
-final class PhoneEventViewModel: ObservableObject, Identifiable {
+final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel {
     private let event: WordCamp
     private var cancellabe: AnyCancellable?
     private let mediaService: MediaService
@@ -59,6 +59,10 @@ final class PhoneEventViewModel: ObservableObject, Identifiable {
 
     private var mediaID: Int {
         return event.featuredMedia
+    }
+
+    convenience init(event: WordCamp) {
+        self.init(event: event, mediaService: DefaultMediaService())
     }
 
     init(event: WordCamp, mediaService: MediaService = DefaultMediaService()) {

@@ -1,10 +1,10 @@
 import Foundation
 
-struct WordCampList {
+struct WordCampList<ItemViewModel: EventViewModel> {
     private let events: [WordCamp]
     
-    lazy var eventViewModels: [PhoneEventViewModel] = {
-        return events.map { PhoneEventViewModel(event: $0) }
+    lazy var eventViewModels: [ItemViewModel] = {
+        return events.map { ItemViewModel(event: $0) }
     }()
 
     init(events: [WordCamp]) {

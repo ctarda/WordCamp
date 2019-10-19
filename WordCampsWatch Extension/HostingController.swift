@@ -12,6 +12,6 @@ import SwiftUI
 
 class HostingController: WKHostingController<WatchScheduleList> {
     override var body: WatchScheduleList {
-        return WatchScheduleList(viewModel: WatchWordCampsViewModel())
+        return WatchScheduleList(viewModel: WordCampsViewModel<WatchEventViewModel>())
     }
 }

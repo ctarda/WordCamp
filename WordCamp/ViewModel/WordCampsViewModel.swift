@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-final class WordCampsViewModel: ObservableObject {
+final class WordCampsViewModel<ItemViewModel: EventViewModel>: ObservableObject {
     private let service: WordCampService
     private var cancellabe: AnyCancellable?
 
@@ -13,9 +13,9 @@ final class WordCampsViewModel: ObservableObject {
         }
     }
 
-    var objectWillChange = PassthroughSubject<WordCampsViewModel, Never>()
+    var objectWillChange = PassthroughSubject<WordCampsViewModel<ItemViewModel>, Never>()
 
-    private var wordCampList = WordCampList(events: []) {
+    private var wordCampList = WordCampList<ItemViewModel>(events: []) {
         didSet {
             DispatchQueue.main.async {
                 self.objectWillChange.send(self)
@@ -23,7 +23,7 @@ final class WordCampsViewModel: ObservableObject {
         }
     }
 
-    var events: [PhoneEventViewModel] {
+    var events: [ItemViewModel] {
         if textFilter == "" {
             return wordCampList.eventViewModels
         }

@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-final class WatchEventViewModel: ObservableObject, Identifiable {
+final class WatchEventViewModel: ObservableObject, Identifiable, EventViewModel {
     private let event: WordCamp
     private var cancellabe: AnyCancellable?
 
