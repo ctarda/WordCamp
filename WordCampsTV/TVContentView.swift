@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct TVContentView: View {
+    @ObservedObject var viewModel: WordCampsViewModel<PhoneEventViewModel>
+    
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            VStack {
+            List(viewModel.events) { event in
+                NavigationLink(destination: TVWordCampDetail(event: event)) {
+                    TVWordCampListView(event: event)
+                }
+            }
+            .navigationBarTitle(Text("Upcoming WordCamps"))
+            }
+        }
     }
-}
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        TVContentView()
+    init(viewModel: WordCampsViewModel<PhoneEventViewModel>) {
+        self.viewModel = viewModel
     }
 }
