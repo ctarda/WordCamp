@@ -6,15 +6,15 @@ struct WatchDetailStack: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 2) {
-                Text(event.readableTitle).font(.title)
+                Text(event.readableTitle).font(.headline)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(event.location).font(.headline)
+                Text(event.location).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(event.startDate).font(.headline)
+                Text(event.startDate).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(event.venueName).font(.headline)
+                Text(event.venueName).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(event.venueAddress).font(.headline)
+                Text(event.venueAddress).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                 HStack {
