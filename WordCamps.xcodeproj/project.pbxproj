@@ -43,7 +43,7 @@
 		D8D42EBE235B268100C4201B /* WordCampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFFC232D657600687E4B /* WordCampList.swift */; };
 		D8D42EC2235B2A4D00C4201B /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EC1235B2A4D00C4201B /* WatchMapView.swift */; };
 		D8D42ECA235B3EB000C4201B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EC9235B3EB000C4201B /* AppDelegate.swift */; };
-		D8D42ECC235B3EB000C4201B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42ECB235B3EB000C4201B /* ContentView.swift */; };
+		D8D42ECC235B3EB000C4201B /* TVContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42ECB235B3EB000C4201B /* TVContentView.swift */; };
 		D8D42ECE235B3EB200C4201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D42ECD235B3EB200C4201B /* Assets.xcassets */; };
 		D8D42ED1235B3EB200C4201B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D42ED0235B3EB200C4201B /* Preview Assets.xcassets */; };
 		D8D42ED4235B3EB200C4201B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D42ED2235B3EB200C4201B /* LaunchScreen.storyboard */; };
@@ -159,7 +159,7 @@
 		D8D42EC1235B2A4D00C4201B /* WatchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMapView.swift; sourceTree = "<group>"; };
 		D8D42EC7235B3EB000C4201B /* WordCampsTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCampsTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D42EC9235B3EB000C4201B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8D42ECB235B3EB000C4201B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D8D42ECB235B3EB000C4201B /* TVContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVContentView.swift; sourceTree = "<group>"; };
 		D8D42ECD235B3EB200C4201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D42ED0235B3EB200C4201B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8D42ED3235B3EB200C4201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				D8D42EC9235B3EB000C4201B /* AppDelegate.swift */,
-				D8D42ECB235B3EB000C4201B /* ContentView.swift */,
+				D8D42ECB235B3EB000C4201B /* TVContentView.swift */,
 				D8D42ECD235B3EB200C4201B /* Assets.xcassets */,
 				D8D42ED2235B3EB200C4201B /* LaunchScreen.storyboard */,
 				D8D42ED5235B3EB200C4201B /* Info.plist */,
@@ -319,9 +319,60 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D8D42ED9235B3F3B00C4201B /* Shared code */ = {
+			isa = PBXGroup;
+			children = (
+				D8D42EDD235B3FB700C4201B /* Model */,
+				D8D42EDC235B3F9E00C4201B /* Networking */,
+				D8D42EDB235B3F8000C4201B /* ViewModel */,
+				D8D42EDA235B3F6300C4201B /* Extensions */,
+				D8E2B8082359899B0064A147 /* Previews Support */,
+			);
+			path = "Shared code";
+			sourceTree = "<group>";
+		};
+		D8D42EDA235B3F6300C4201B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D8D42EDB235B3F8000C4201B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8D42EDC235B3F9E00C4201B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D8EEA5E92331A075006C32D0 /* WordCampService.swift */,
+				D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D8D42EDD235B3FB700C4201B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8D42EB9235B238800C4201B /* EventViewModel.swift */,
+				D8D7CFFC232D657600687E4B /* WordCampList.swift */,
+				D8D7D00B232D96D100687E4B /* WordCampTitle.swift */,
+				D8D7D00D232D972800687E4B /* VenueCoordinates.swift */,
+				D8D7D00F232D980A00687E4B /* WordCamp.swift */,
+				D8D7D01A232D9F7000687E4B /* WordCampContent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D8D7CFCD232D648300687E4B = {
 			isa = PBXGroup;
 			children = (
+				D8D42ED9235B3F3B00C4201B /* Shared code */,
 				D8D7CFD8232D648300687E4B /* WordCamp */,
 				D8D7CFEF232D648600687E4B /* WordCampTests */,
 				D8D42E5E235B141A00C4201B /* WordCampsWatch */,
@@ -346,7 +397,6 @@
 		D8D7CFD8232D648300687E4B /* WordCamp */ = {
 			isa = PBXGroup;
 			children = (
-				D8E2B8082359899B0064A147 /* Previews Support */,
 				D8D7D011232D987500687E4B /* Extensions */,
 				D8D7D008232D926800687E4B /* View */,
 				D8D7D020232E6DC100687E4B /* ViewModel */,
@@ -385,13 +435,7 @@
 		D8D7CFFB232D654D00687E4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7CFFC232D657600687E4B /* WordCampList.swift */,
-				D8D7D00B232D96D100687E4B /* WordCampTitle.swift */,
-				D8D7D00D232D972800687E4B /* VenueCoordinates.swift */,
-				D8D7D00F232D980A00687E4B /* WordCamp.swift */,
-				D8D7D01A232D9F7000687E4B /* WordCampContent.swift */,
 				D8D7D02B232EBF9000687E4B /* Media.swift */,
-				D8D42EB9235B238800C4201B /* EventViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -401,8 +445,6 @@
 			children = (
 				D8EEA5F72331ACD8006C32D0 /* MediaService.swift */,
 				D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */,
-				D8EEA5E92331A075006C32D0 /* WordCampService.swift */,
-				D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */,
 				D8113CED232FECA9004DD6A4 /* RemoteImage.swift */,
 			);
 			path = Networking;
@@ -426,7 +468,6 @@
 		D8D7D011232D987500687E4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7D003232D7B3100687E4B /* Date+WordCamp.swift */,
 				D8D7D01C232DA0DB00687E4B /* String+WordCamp.swift */,
 			);
 			path = Extensions;
@@ -435,7 +476,6 @@
 		D8D7D020232E6DC100687E4B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
 				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
 			);
 			path = ViewModel;
@@ -709,7 +749,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D42ECC235B3EB000C4201B /* ContentView.swift in Sources */,
+				D8D42ECC235B3EB000C4201B /* TVContentView.swift in Sources */,
 				D8D42ECA235B3EB000C4201B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
