@@ -41,7 +41,7 @@
 		D8D42EBC235B247500C4201B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EB9235B238800C4201B /* EventViewModel.swift */; };
 		D8D42EBD235B267C00C4201B /* WordCampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */; };
 		D8D42EBE235B268100C4201B /* WordCampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFFC232D657600687E4B /* WordCampList.swift */; };
-		D8D42EC2235B2A4D00C4201B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EC1235B2A4D00C4201B /* MapView.swift */; };
+		D8D42EC2235B2A4D00C4201B /* WatchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42EC1235B2A4D00C4201B /* WatchMapView.swift */; };
 		D8D7CFDA232D648300687E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFD9232D648300687E4B /* AppDelegate.swift */; };
 		D8D7CFDC232D648300687E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFDB232D648300687E4B /* SceneDelegate.swift */; };
 		D8D7CFDE232D648300687E4B /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7CFDD232D648300687E4B /* ScheduleList.swift */; };
@@ -151,7 +151,7 @@
 		D8D42EAE235B1B4C00C4201B /* WatchDetailStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchDetailStack.swift; sourceTree = "<group>"; };
 		D8D42EB0235B1BA400C4201B /* WatchWordCampListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchWordCampListView.swift; sourceTree = "<group>"; };
 		D8D42EB9235B238800C4201B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
-		D8D42EC1235B2A4D00C4201B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D8D42EC1235B2A4D00C4201B /* WatchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMapView.swift; sourceTree = "<group>"; };
 		D8D7CFD6232D648300687E4B /* WordCamps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCamps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D7CFD9232D648300687E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8D7CFDB232D648300687E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 				D8D42EAC235B1B1800C4201B /* WatchWordCampDetail.swift */,
 				D8D42EAE235B1B4C00C4201B /* WatchDetailStack.swift */,
 				D8D42EB0235B1BA400C4201B /* WatchWordCampListView.swift */,
-				D8D42EC1235B2A4D00C4201B /* MapView.swift */,
+				D8D42EC1235B2A4D00C4201B /* WatchMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -607,7 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8D42EAF235B1B4C00C4201B /* WatchDetailStack.swift in Sources */,
-				D8D42EC2235B2A4D00C4201B /* MapView.swift in Sources */,
+				D8D42EC2235B2A4D00C4201B /* WatchMapView.swift in Sources */,
 				D8D42EBD235B267C00C4201B /* WordCampsViewModel.swift in Sources */,
 				D8D42E9B235B183500C4201B /* WordCampService.swift in Sources */,
 				D8D42E9E235B184A00C4201B /* WordCampTitle.swift in Sources */,

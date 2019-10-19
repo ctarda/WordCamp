@@ -1,14 +1,14 @@
 import SwiftUI
 import MapKit
 
-struct MapView: WKInterfaceObjectRepresentable {
+struct WatchMapView: WKInterfaceObjectRepresentable {
     let coordinate: CLLocationCoordinate2D
 
-    func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<MapView>) -> WKInterfaceMap {
+    func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<WatchMapView>) -> WKInterfaceMap {
         return WKInterfaceMap()
     }
 
-    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<MapView>) {
+    func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<WatchMapView>) {
         let span = MKCoordinateSpan(latitudeDelta: 2.0,
                                     longitudeDelta: 2.0)
 
@@ -20,9 +20,9 @@ struct MapView: WKInterfaceObjectRepresentable {
     }
 }
 
-struct MapView_Previews: PreviewProvider {
+struct WatchMapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(coordinate: CLLocationCoordinate2DMake(0, 0))
+        WatchMapView(coordinate: CLLocationCoordinate2DMake(0, 0))
     }
 }
 

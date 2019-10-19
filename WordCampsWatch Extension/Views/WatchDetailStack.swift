@@ -19,7 +19,7 @@ struct WatchDetailStack: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    MapView(coordinate: event.locationCoordinates)
+                    WatchMapView(coordinate: event.locationCoordinates)
                         .frame(width: 120, height: 120, alignment: .center)
                     Spacer()
                 }
