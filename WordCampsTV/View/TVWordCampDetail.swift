@@ -6,15 +6,18 @@ struct TVWordCampDetail: View {
     var body: some View {
         VStack {
             MapView(coordinate: event.locationCoordinates)
-                .frame(height: CGFloat(400.0))
+                .frame(height: CGFloat(500.0))
 
             CircleImage(url: event.thumbnail)
-                .frame(width: CGFloat(100.0), height: CGFloat(100.0), alignment: .center)
-                .offset(y: CGFloat(-50))
-                .padding(.bottom, CGFloat(-50.0))
+                .frame(width: CGFloat(260.0), height: CGFloat(260.0), alignment: .center)
+                .offset(y: CGFloat(-130))
+                .padding(.bottom, CGFloat(-130.0))
                 .shadow(radius: 10)
 
+            Spacer()
+
             TVDetailStack(event: event)
+            .padding()
         }
     }
 }
