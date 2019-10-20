@@ -13,10 +13,13 @@ final class WordCampsViewModel<ItemViewModel: EventViewModel>: ObservableObject 
         }
     }
 
+    var isLoading: Bool = true
+
     var objectWillChange = PassthroughSubject<WordCampsViewModel<ItemViewModel>, Never>()
 
     private var wordCampList = WordCampList<ItemViewModel>(events: []) {
         didSet {
+            self.isLoading = wordCampList.eventViewModels.count == 0
             DispatchQueue.main.async {
                 self.objectWillChange.send(self)
             }

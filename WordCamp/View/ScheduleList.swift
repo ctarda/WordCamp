@@ -7,12 +7,14 @@ struct ScheduleList: View {
         NavigationView {
             VStack {
                 SearchBar(text: $viewModel.textFilter)
-            List(viewModel.events) { event in
-                NavigationLink(destination: WordCampDetail(event: event)) {
-                    WordCampListView(event: event)
+                LoadingView(isShowing: self.viewModel.isLoading) {
+                    List(self.viewModel.events) { event in
+                        NavigationLink(destination: WordCampDetail(event: event)) {
+                            WordCampListView(event: event)
+                        }
+                    }
+                    .navigationBarTitle(Text("Upcoming WordCamps"))
                 }
-            }
-            .navigationBarTitle(Text("Upcoming WordCamps"))
             }
         }
     }
