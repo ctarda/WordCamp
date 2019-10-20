@@ -17,7 +17,7 @@ struct TVWordCampListView: View {
     }
 }
 
-struct WordCampListView_Preview: PreviewProvider {
+struct TVWordCampListView_Preview: PreviewProvider {
     static var previews: some View {
         let viewModel = PhoneEventViewModel(event: PreviewData.wordCamp())
         return TVWordCampListView(event: viewModel)
