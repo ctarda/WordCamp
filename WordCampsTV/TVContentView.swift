@@ -12,14 +12,16 @@ struct TVContentView: View {
     @ObservedObject var viewModel: WordCampsViewModel<PhoneEventViewModel>
     
     var body: some View {
-        NavigationView {
-            VStack {
-            List(viewModel.events) { event in
-                NavigationLink(destination: TVWordCampDetail(event: event)) {
-                    TVWordCampListView(event: event)
+        LoadingView(isShowing: self.viewModel.isLoading) {
+            NavigationView {
+                VStack {
+                    List(self.viewModel.events) { event in
+                        NavigationLink(destination: TVWordCampDetail(event: event)) {
+                            TVWordCampListView(event: event)
+                        }
+                    }
+                    .navigationBarTitle(Text("Upcoming WordCamps"))
                 }
-            }
-            .navigationBarTitle(Text("Upcoming WordCamps"))
             }
         }
     }
