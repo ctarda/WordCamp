@@ -5,7 +5,8 @@ struct WordCampDetail: View {
 
     var body: some View {
         VStack {
-            MapView(coordinate: event.locationCoordinates)
+            MapView(coordinate: event.locationCoordinates,
+                    delta: 2.0)
                 .frame(height: CGFloat(200))
 
             CircleImage(url: event.thumbnail)
