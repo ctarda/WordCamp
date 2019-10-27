@@ -7,8 +7,9 @@ jobs:
   build:
 
     # Specify the Xcode version to use
-    macos:
-      xcode: "11.1"
+    executor:
+      name: ios/default
+      xcode-version: "11.1"
 
     steps:
       - checkout
