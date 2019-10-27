@@ -3,14 +3,15 @@ import MapKit
 
 struct WatchMapView: WKInterfaceObjectRepresentable {
     let coordinate: CLLocationCoordinate2D
+    let delta: CLLocationDegrees
 
     func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<WatchMapView>) -> WKInterfaceMap {
         return WKInterfaceMap()
     }
 
     func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<WatchMapView>) {
-        let span = MKCoordinateSpan(latitudeDelta: 2.0,
-                                    longitudeDelta: 2.0)
+        let span = MKCoordinateSpan(latitudeDelta: delta,
+                                    longitudeDelta: delta)
 
         let region = MKCoordinateRegion(
             center: coordinate,
@@ -22,7 +23,7 @@ struct WatchMapView: WKInterfaceObjectRepresentable {
 
 struct WatchMapView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchMapView(coordinate: CLLocationCoordinate2DMake(0, 0))
+        WatchMapView(coordinate: CLLocationCoordinate2DMake(0, 0), delta: 0.02)
     }
 }
 
