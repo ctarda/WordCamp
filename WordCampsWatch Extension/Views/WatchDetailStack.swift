@@ -19,8 +19,8 @@ struct WatchDetailStack: View {
                 Spacer()
                 HStack {
                     Spacer()
-                    WatchMapView(coordinate: event.locationCoordinates,
-                                 delta: 0.02)
+                    WatchMapView(coordinate: event.annotation.coordinate,
+                                 delta: 0.02, annotations: [event.annotation])
                         .frame(width: 120, height: 120, alignment: .center)
                     Spacer()
                 }

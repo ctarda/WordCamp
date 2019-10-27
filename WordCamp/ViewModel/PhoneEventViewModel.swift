@@ -29,8 +29,8 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
         return event.content.rendered.strippedHTML
     }
 
-    var locationCoordinates: CLLocationCoordinate2D {
-        return event.venueCoordinates.locationCoordinates
+    var annotation: WordCampAnnotation {
+        return WordCampAnnotation(event: event)
     }
 
     var location: String {

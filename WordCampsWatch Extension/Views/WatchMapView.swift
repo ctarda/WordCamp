@@ -4,9 +4,15 @@ import MapKit
 struct WatchMapView: WKInterfaceObjectRepresentable {
     let coordinate: CLLocationCoordinate2D
     let delta: CLLocationDegrees
+    let annotations: [MKAnnotation]
 
     func makeWKInterfaceObject(context: WKInterfaceObjectRepresentableContext<WatchMapView>) -> WKInterfaceMap {
-        return WKInterfaceMap()
+        let map = WKInterfaceMap()
+        for annotation in annotations {
+            map.addAnnotation(annotation.coordinate, with: .red)
+        }
+
+        return map
     }
 
     func updateWKInterfaceObject(_ map: WKInterfaceMap, context: WKInterfaceObjectRepresentableContext<WatchMapView>) {
@@ -23,7 +29,7 @@ struct WatchMapView: WKInterfaceObjectRepresentable {
 
 struct WatchMapView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchMapView(coordinate: CLLocationCoordinate2DMake(0, 0), delta: 0.02)
+        WatchMapView(coordinate: CLLocationCoordinate2DMake(0, 0), delta: 0.02, annotations: [])
     }
 }
 
