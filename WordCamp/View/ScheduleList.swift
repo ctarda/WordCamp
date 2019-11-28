@@ -16,7 +16,7 @@ struct ScheduleList: View {
                     .navigationBarTitle(Text("Upcoming WordCamps"))
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 
     init(viewModel: WordCampsViewModel<PhoneEventViewModel>) {
