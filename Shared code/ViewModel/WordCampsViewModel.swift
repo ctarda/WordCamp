@@ -20,6 +20,10 @@ final class WordCampsViewModel<ItemViewModel: EventViewModel>: ObservableObject 
     private var wordCampList = WordCampList<ItemViewModel>(events: []) {
         didSet {
             self.isLoading = wordCampList.eventViewModels.count == 0
+            if !self.isLoading {
+                cancellabe?.cancel()
+                return
+            }
             DispatchQueue.main.async {
                 self.objectWillChange.send(self)
             }
@@ -47,6 +51,7 @@ final class WordCampsViewModel<ItemViewModel: EventViewModel>: ObservableObject 
             .catch { _ in Just([]) }
             .map { $0.sorted() }
             .map { WordCampList(events: $0) }
+            .receive(on: RunLoop.main)
             .assign(to: \.wordCampList, on: self)
     }
 }
