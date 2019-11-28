@@ -51,8 +51,7 @@ final class MapViewDelegate: NSObject, MKMapViewDelegate {
             return
         }
 
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        location.mapItem().openInMaps(launchOptions: launchOptions)
+        location.mapItem().openInMaps(launchOptions: nil)
     }
 }
 
