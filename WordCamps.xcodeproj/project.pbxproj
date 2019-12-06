@@ -19,6 +19,7 @@
 		D84794182365836500C01CAD /* WordCampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84794172365836500C01CAD /* WordCampAnnotation.swift */; };
 		D84794192365836B00C01CAD /* WordCampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84794172365836500C01CAD /* WordCampAnnotation.swift */; };
 		D847941A2365836C00C01CAD /* WordCampAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84794172365836500C01CAD /* WordCampAnnotation.swift */; };
+		D85EABC6239A2E3C005FD940 /* WatchLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EABC5239A2E3C005FD940 /* WatchLoadingView.swift */; };
 		D8D42E61235B141A00C4201B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D42E5F235B141A00C4201B /* Interface.storyboard */; };
 		D8D42E63235B141C00C4201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D42E62235B141C00C4201B /* Assets.xcassets */; };
 		D8D42E6A235B141C00C4201B /* WordCampsWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D8D42E69235B141C00C4201B /* WordCampsWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -168,6 +169,7 @@
 		D8133548235C0BCE0028ACD5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D824CD572336439C00437CC9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D84794172365836500C01CAD /* WordCampAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampAnnotation.swift; sourceTree = "<group>"; };
+		D85EABC5239A2E3C005FD940 /* WatchLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLoadingView.swift; sourceTree = "<group>"; };
 		D8D42E5D235B141A00C4201B /* WordCampsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCampsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D42E60235B141A00C4201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D8D42E62235B141C00C4201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		D8D42EAB235B1B0900C4201B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D85EABC5239A2E3C005FD940 /* WatchLoadingView.swift */,
 				D8D42EAC235B1B1800C4201B /* WatchWordCampDetail.swift */,
 				D8D42EAE235B1B4C00C4201B /* WatchDetailStack.swift */,
 				D8D42EB0235B1BA400C4201B /* WatchWordCampListView.swift */,
@@ -781,6 +784,7 @@
 				D8D42EC2235B2A4D00C4201B /* WatchMapView.swift in Sources */,
 				D8D42EBD235B267C00C4201B /* WordCampsViewModel.swift in Sources */,
 				D8D42E9B235B183500C4201B /* WordCampService.swift in Sources */,
+				D85EABC6239A2E3C005FD940 /* WatchLoadingView.swift in Sources */,
 				D8D42E9E235B184A00C4201B /* WordCampTitle.swift in Sources */,
 				D8D42E71235B141C00C4201B /* HostingController.swift in Sources */,
 				D8D42E9C235B183500C4201B /* DefaultWordCampService.swift in Sources */,

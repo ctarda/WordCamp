@@ -3,9 +3,11 @@ import SwiftUI
 struct WatchScheduleList: View {
     @ObservedObject var viewModel: WordCampsViewModel<WatchEventViewModel>
     var body: some View {
-        List(viewModel.events) { event in
-            NavigationLink(destination: WatchWordCampDetail(event: event)) {
-                WatchWordCampListView(event: event)
+        WatchLoadingView(isShowing: self.viewModel.isLoading) {
+            List(self.viewModel.events) { event in
+                NavigationLink(destination: WatchWordCampDetail(event: event)) {
+                    WatchWordCampListView(event: event)
+                }
             }
         }
     }
