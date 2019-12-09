@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct WordCampListView: View {
-    let event: PhoneEventViewModel
+    @ObservedObject var event: PhoneEventViewModel
 
     var body: some View {
         HStack(spacing: 12) {
