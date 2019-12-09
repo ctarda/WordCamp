@@ -14,6 +14,10 @@ struct SearchBar: UIViewRepresentable {
 
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             text = searchText
+
+            if searchText.count == 0 {
+                searchBar.perform(#selector(searchBar.resignFirstResponder), with: nil, afterDelay: 0.1)
+            }
         }
     }
 
