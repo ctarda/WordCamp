@@ -1,5 +1,8 @@
 import MapKit
+
+#if canImport(Contacts)
 import Contacts
+#endif
 
 final class WordCampAnnotation: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
@@ -12,6 +15,7 @@ final class WordCampAnnotation: NSObject, MKAnnotation {
         self.subtitle = event.venueName
     }
 
+    #if canImport(Contacts)
     func mapItem() -> MKMapItem {
       let addressDict = [CNPostalAddressStreetKey: subtitle!]
       let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
@@ -19,4 +23,5 @@ final class WordCampAnnotation: NSObject, MKAnnotation {
       mapItem.name = title
       return mapItem
     }
+    #endif
 }
