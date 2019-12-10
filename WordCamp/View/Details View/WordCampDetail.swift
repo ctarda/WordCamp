@@ -5,18 +5,50 @@ struct WordCampDetail: View {
 
     var body: some View {
         VStack {
-            MapView(coordinate: event.annotation.coordinate,
-                    delta: 2.0,
-                    annotations: [event.annotation])
-                .frame(height: CGFloat(200))
+            ScrollView {
+                VStack {
+                    MapView(coordinate: event.annotation.coordinate,
+                            delta: 2.0,
+                            annotations: [event.annotation])
+                        .frame(height: CGFloat(200))
 
-            CircleImage(url: event.thumbnail)
-                .frame(width: 100, height: 100, alignment: .center)
-                .offset(y: -50)
-                .padding(.bottom, -50)
-                .shadow(radius: 10)
+                    CircleImage(url: event.thumbnail)
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .offset(y: -50)
+                        .padding(.bottom, -50)
+                        .shadow(radius: 10)
 
-            DetailStack(event: event)
+                    // This VSTack used to be encapsulated in its own View, but
+                    // when embeded in a ScrollView, it crashes. 
+                    VStack(alignment: .leading) {
+                        Text(event.readableTitle).font(.title)
+                            .lineLimit(2)
+
+                        Divider()
+
+                        HStack {
+                            Text(event.location).font(.headline)
+                            Spacer()
+                            Text(event.date).font(.headline)
+                                .foregroundColor(.secondary)
+                        }
+
+                        Divider()
+
+                        Text(event.venueName).font(.headline)
+                        Text(event.venueAddress).font(.headline)
+
+                        Divider()
+
+                        Text(event.readableContent)
+                            .font(.body)
+                            .lineLimit(Int.max)
+
+                    }
+                    .padding()
+                }
+            }
+            OpenLinkButton(event: event)
         }
         .navigationBarTitle(Text(event.readableTitle), displayMode: .inline)
     }
