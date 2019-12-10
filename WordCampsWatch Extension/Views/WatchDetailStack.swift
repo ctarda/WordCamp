@@ -8,10 +8,13 @@ struct WatchDetailStack: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(event.readableTitle).font(.headline)
                     .fixedSize(horizontal: false, vertical: true)
+                Spacer()
                 Text(event.location).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
+                Divider()
                 Text(event.date).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
+                Divider()
                 Text(event.venueName).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
                 Text(event.venueAddress).font(.body)
