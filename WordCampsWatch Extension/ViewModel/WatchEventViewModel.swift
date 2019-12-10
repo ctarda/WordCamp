@@ -20,7 +20,7 @@ final class WatchEventViewModel: ObservableObject, Identifiable, EventViewModel 
         return event.location
     }
 
-    var startDate: String {
+    var date: String {
         return event.startDate.toString(dateStyle: .medium, timeStyle: .none)
     }
 

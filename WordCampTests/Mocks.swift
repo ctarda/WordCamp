@@ -9,6 +9,7 @@ struct Mocks {
     static let featuredMedia = 12345
     static let location = "Antartica"
     static let startDate = Date()
+    static let endDate: Date? = nil
     static let url = "https://somewhere.on.the.internet"
     static let venueName = "Penguin House"
     static let venueAddress = "1, South Pole Dr."
@@ -21,6 +22,7 @@ struct Mocks {
                         featuredMedia: featuredMedia,
                         location: location,
                         startDate: startDate,
+                        endDate: endDate,
                         url: url,
                         venueName: venueName,
                         venueAddress: venueAddress,
