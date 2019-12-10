@@ -18,7 +18,7 @@ WorCamp List and details iPadOS
 
 ## Architecture
 
-This proof of concept is built using a traditional three layer architecture. 
+This app is built using a traditional three layer architecture. 
 
 <img src="/docs/images/architecture-overview.png" alt="Architecture overview" width="500"/>
 
