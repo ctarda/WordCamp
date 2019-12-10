@@ -42,7 +42,7 @@ final class EventViewModelTests: XCTestCase {
     }
 
     func testStartDateMatchesExpectation() {
-        XCTAssertEqual(viewModel.startDate, event.startDate.toString(dateStyle: .medium, timeStyle: .none))
+        XCTAssertEqual(viewModel.startDate, event.startDate.toString(dateStyle: .long, timeStyle: .none))
     }
 
     func testURLMatchesExpectation() {
