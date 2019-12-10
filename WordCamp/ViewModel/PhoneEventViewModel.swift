@@ -42,7 +42,7 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
             return event.startDate.toString(dateStyle: .long, timeStyle: .none)
         }
 
-        return "\(event.startDate.toStringMonthAndDay()) - \(endDate.toStringDay()), \(endDate.toStringYear())"
+        return "\(event.startDate.toStringMonthAndDay()) - \(endDate.toStringMonthAndDay()), \(endDate.toStringYear())"
     }
 
     var url: String {
