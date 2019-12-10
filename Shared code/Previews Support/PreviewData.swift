@@ -8,6 +8,7 @@ struct PreviewData {
                  featuredMedia: 0,
                  location: "Rosebud",
                  startDate: Date(),
+                 endDate: nil,
                  url: "http://somewhere.on.the.internet.com",
                  venueName: "Resebud bowl",
                  venueAddress: "12 Hung Lok Rd",
