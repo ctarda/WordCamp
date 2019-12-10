@@ -13,6 +13,9 @@
       "role" : "primary-app-icon"
     },
     {
+      "filename" : "app-launch.imageset"
+    },
+    {
       "size" : "2320x720",
       "idiom" : "tv",
       "filename" : "Top Shelf Image Wide.imageset",
