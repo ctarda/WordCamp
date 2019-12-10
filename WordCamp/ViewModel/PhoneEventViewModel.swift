@@ -78,7 +78,10 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
     func matches(textFilter: String) -> Bool {
         return readableTitle
             .lowercased()
-            .contains(textFilter.lowercased())
+            .contains(textFilter.lowercased()) ||
+            location
+                .lowercased()
+                .contains(textFilter.lowercased())
     }
 
     private func fetchMedia() {
