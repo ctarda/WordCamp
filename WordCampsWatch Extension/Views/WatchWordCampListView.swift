@@ -10,7 +10,7 @@ struct WatchWordCampListView: View {
             Text(event.location).font(.subheadline)
                 .foregroundColor(Color.gray)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(event.startDate)
+            Text(event.date)
                 .fixedSize(horizontal: false, vertical: true)
         }
     }

@@ -10,7 +10,7 @@ struct WatchDetailStack: View {
                     .fixedSize(horizontal: false, vertical: true)
                 Text(event.location).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
-                Text(event.startDate).font(.body)
+                Text(event.date).font(.body)
                     .fixedSize(horizontal: false, vertical: true)
                 Text(event.venueName).font(.body)
                     .fixedSize(horizontal: false, vertical: true)

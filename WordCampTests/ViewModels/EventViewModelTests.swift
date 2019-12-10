@@ -32,9 +32,9 @@ final class EventViewModelTests: XCTestCase {
     }
 
     func testLocationCoordinatesMatchesExpectation() {
-        XCTAssertEqual(viewModel.locationCoordinates.latitude, event.venueCoordinates.locationCoordinates.latitude)
+        XCTAssertEqual(viewModel.annotation.coordinate.latitude, event.venueCoordinates.locationCoordinates.latitude)
 
-        XCTAssertEqual(viewModel.locationCoordinates.longitude, event.venueCoordinates.locationCoordinates.longitude)
+        XCTAssertEqual(viewModel.annotation.coordinate.longitude, event.venueCoordinates.locationCoordinates.longitude)
     }
 
     func testLocationMatchesExpectation() {
@@ -42,7 +42,7 @@ final class EventViewModelTests: XCTestCase {
     }
 
     func testStartDateMatchesExpectation() {
-        XCTAssertEqual(viewModel.startDate, event.startDate.toString(dateStyle: .long, timeStyle: .none))
+        XCTAssertEqual(viewModel.date, event.startDate.toString(dateStyle: .long, timeStyle: .none))
     }
 
     func testURLMatchesExpectation() {

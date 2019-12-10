@@ -10,7 +10,7 @@ struct TVDetailStack: View {
             HStack {
                 Text(event.location).font(.headline)
                 Spacer()
-                Text(event.startDate).font(.headline)
+                Text(event.date).font(.headline)
             }
             Text(event.venueName).font(.headline)
             Text(event.venueAddress).font(.headline)

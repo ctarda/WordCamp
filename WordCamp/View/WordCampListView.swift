@@ -11,7 +11,7 @@ struct WordCampListView: View {
             VStack(alignment: .leading) {
                 Text(event.readableTitle).font(.headline)
                 Text(event.location).font(.subheadline)
-                Text(event.startDate)
+                Text(event.date)
             }
         }
     }

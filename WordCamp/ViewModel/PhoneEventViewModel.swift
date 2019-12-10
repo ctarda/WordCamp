@@ -37,7 +37,7 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
         return event.location
     }
 
-    var startDate: String {
+    var date: String {
         return event.startDate.toString(dateStyle: .long, timeStyle: .none)
     }
 
