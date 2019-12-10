@@ -7,6 +7,7 @@ struct WordCamp: Decodable, Identifiable {
     let featuredMedia: Int
     let location: String
     let startDate: Date
+    let endDate: Date?
     let url: String
     let venueName: String
     let venueAddress: String
@@ -18,6 +19,7 @@ struct WordCamp: Decodable, Identifiable {
          featuredMedia: Int,
          location: String,
          startDate: Date,
+         endDate: Date?,
          url: String,
          venueName: String,
          venueAddress: String,
@@ -28,6 +30,7 @@ struct WordCamp: Decodable, Identifiable {
         self.featuredMedia = featuredMedia
         self.location = location
         self.startDate = startDate
+        self.endDate = endDate
         self.url = url
         self.venueName = venueName
         self.venueAddress = venueAddress
@@ -44,6 +47,7 @@ extension WordCamp {
         case featuredMedia = "featured_media"
         case location = "Location"
         case startDate = "Start Date (YYYY-mm-dd)"
+        case endDate = "End Date (YYYY-mm-dd)"
         case url = "URL"
         case venueName = "Venue Name"
         case venueAddress = "Physical Address"
@@ -60,7 +64,11 @@ extension WordCamp {
         let location = try container.decode(String.self, forKey: .location)
         let startDateString = try container.decodeIfPresent(String.self, forKey: .startDate) ?? ""
         let startDateDouble = Double(startDateString) ?? 0
-        let date = Date(timeIntervalSince1970: startDateDouble)
+        let startDate = Date(timeIntervalSince1970: startDateDouble)
+
+        let endDateString = try container.decodeIfPresent(String.self, forKey: .endDate) ?? ""
+        let endDateDouble = Double(endDateString) ?? 0
+        let endDate = endDateDouble != 0 ? Date(timeIntervalSince1970: endDateDouble) : nil
 
         let url = try container.decode(String.self, forKey: .url)
 
@@ -73,7 +81,8 @@ extension WordCamp {
                   content: content,
                   featuredMedia: featuredMedia,
                   location: location,
-                  startDate: date,
+                  startDate: startDate,
+                  endDate: endDate,
                   url: url,
                   venueName: venueName,
                   venueAddress: venueAddress,
