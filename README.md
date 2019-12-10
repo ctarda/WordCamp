@@ -1,6 +1,10 @@
 # WordCamp iOS
 
-A sample app built using SwiftUI.
+WordCamp is a conference that focuses on everything WordPress.
+
+WordCamps are informal, community-organized events that are put together by WordPress users like you. Everyone from casual users to core developers participate, share ideas, and get to know each other.
+
+This app, built using SwiftUI, presents  alist of Upcoming WordCamps.
 
 ## Screenshots
 
