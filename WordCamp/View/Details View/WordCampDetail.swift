@@ -2,6 +2,7 @@ import SwiftUI
 
 struct WordCampDetail: View {
     let event: PhoneEventViewModel
+    @State private var showShareSheet = false
 
     var body: some View {
         VStack {
@@ -51,6 +52,7 @@ struct WordCampDetail: View {
             OpenLinkButton(event: event)
         }
         .navigationBarTitle(Text(event.readableTitle), displayMode: .inline)
+        .navigationBarItems(trailing: ShareLinkButton(event: event))
     }
 }
 
