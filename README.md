@@ -12,9 +12,9 @@ WordCamp details iOS
 
 <img src="/docs/images/wordcamp-details-iphone.png" alt="WordCamp details iPhone" width="250"/>
 
-WorCamp List and details iPadOS 
+WorCamp List watchOS
 
-<img src="/docs/images/wordcamp-ipad.png" alt="WordCamp details iPhone" width="500"/>
+<img src="/docs/images/wordcamp_watchOS.png" alt="WordCamp details iPhone" width="200"/>
 
 ## Architecture
 
