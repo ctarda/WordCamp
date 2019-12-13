@@ -12,7 +12,8 @@ struct PreviewData {
                  url: "http://somewhere.on.the.internet.com",
                  venueName: "Resebud bowl",
                  venueAddress: "12 Hung Lok Rd",
-                 venueCoordinates: venueCoordinates())
+                 venueCoordinates: venueCoordinates(),
+                 twitter: "twitterHandle")
     }
 
     static func wordCampTitle() -> WordCampTitle {
