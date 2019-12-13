@@ -12,6 +12,7 @@ struct WordCamp: Decodable, Identifiable {
     let venueName: String
     let venueAddress: String
     let venueCoordinates: VenueCoordinates
+    let twitter: String
 
     init(id: Int,
          title: WordCampTitle,
@@ -23,7 +24,8 @@ struct WordCamp: Decodable, Identifiable {
          url: String,
          venueName: String,
          venueAddress: String,
-         venueCoordinates: VenueCoordinates) {
+         venueCoordinates: VenueCoordinates,
+         twitter: String) {
         self.id = id
         self.title = title
         self.content = content
@@ -35,6 +37,7 @@ struct WordCamp: Decodable, Identifiable {
         self.venueName = venueName
         self.venueAddress = venueAddress
         self.venueCoordinates = venueCoordinates
+        self.twitter = twitter
     }
 }
 
@@ -52,6 +55,7 @@ extension WordCamp {
         case venueName = "Venue Name"
         case venueAddress = "Physical Address"
         case venueCoordinates = "_venue_coordinates"
+        case twitter = "Twitter"
     }
 
     init(from decoder: Decoder) throws {
@@ -76,6 +80,8 @@ extension WordCamp {
         let venueAddress = try container.decode(String.self, forKey: .venueAddress)
         let venueCoordinates = try container.decode(VenueCoordinates.self, forKey: .venueCoordinates)
 
+        let twitter = try container.decode(String.self, forKey: .twitter)
+
         self.init(id: id,
                   title: title,
                   content: content,
@@ -86,7 +92,8 @@ extension WordCamp {
                   url: url,
                   venueName: venueName,
                   venueAddress: venueAddress,
-                  venueCoordinates: venueCoordinates)
+                  venueCoordinates: venueCoordinates,
+                  twitter: twitter)
     }
 
 }
