@@ -45,6 +45,7 @@ struct WordCampDetail: View {
                             .font(.body)
                             .lineLimit(Int.max)
 
+                        TwitterButton(event: event)
                     }
                     .padding()
                 }

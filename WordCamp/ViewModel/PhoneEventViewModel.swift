@@ -61,6 +61,20 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
         return media.thumbnail
     }
 
+    var twitterHandle: String {
+        let handle = event.twitter
+
+        if handle.hasPrefix("http") || handle.hasPrefix("https") {
+            guard let lastComponent = URL(string: handle)?.lastPathComponent else {
+                return ""
+            }
+
+            return "@\(lastComponent)"
+        }
+
+        return event.twitter
+    }
+
     private var mediaID: Int {
         return event.featuredMedia
     }
