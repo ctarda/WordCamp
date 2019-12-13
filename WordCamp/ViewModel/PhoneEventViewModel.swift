@@ -61,6 +61,10 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
         return media.thumbnail
     }
 
+    var twitterHandle: String {
+        return event.twitter
+    }
+
     private var mediaID: Int {
         return event.featuredMedia
     }
