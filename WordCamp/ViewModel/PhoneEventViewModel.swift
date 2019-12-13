@@ -62,6 +62,16 @@ final class PhoneEventViewModel: ObservableObject, Identifiable, EventViewModel 
     }
 
     var twitterHandle: String {
+        let handle = event.twitter
+
+        if handle.hasPrefix("http") || handle.hasPrefix("https") {
+            guard let lastComponent = URL(string: handle)?.lastPathComponent else {
+                return ""
+            }
+
+            return "@\(lastComponent)"
+        }
+
         return event.twitter
     }
 

@@ -45,22 +45,7 @@ struct WordCampDetail: View {
                             .font(.body)
                             .lineLimit(Int.max)
 
-                        HStack(alignment: .center) {
-                            Spacer()
-                            Button(action: {
-                                print("opening twitter")
-                            }) {
-                                Image("twitter")
-                                    .resizable()
-                                    .frame(width: 40, height: 40)
-                                    .accentColor(.secondary)
-                                Text(event.twitterHandle)
-                            }
-                            Spacer()
-                        }
-
-                        //Spacer()
-
+                        TwitterButton(event: event)
                     }
                     .padding()
                 }
