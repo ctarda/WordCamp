@@ -14,6 +14,7 @@ struct Mocks {
     static let venueName = "Penguin House"
     static let venueAddress = "1, South Pole Dr."
     static let venueCoordinates = VenueCoordinates(latitude: 0, longitude: 180)
+    static let twitter = "twitterHandle"
 
     static var defaultEvent: WordCamp {
         return WordCamp(id: id,
@@ -26,7 +27,8 @@ struct Mocks {
                         url: url,
                         venueName: venueName,
                         venueAddress: venueAddress,
-                        venueCoordinates: venueCoordinates)
+                        venueCoordinates: venueCoordinates,
+                        twitter: twitter)
     }
 }
 
