@@ -1,0 +1,95 @@
+{
+  "id": 3095956,
+  "date": "2019-11-14T14:59:05",
+  "date_gmt": "2019-11-14T19:59:05",
+  "guid": {
+    "rendered": "https://central.wordcamp.org/wordcamps/wordcamp-albuquerque-nm-2/"
+  },
+  "modified": "2019-12-06T13:06:54",
+  "modified_gmt": "2019-12-06T18:06:54",
+  "slug": "wordcamp-albuquerque-nm-2",
+  "status": "wcpt-scheduled",
+  "type": "wordcamp",
+  "link": "https://central.wordcamp.org/wordcamps/wordcamp-albuquerque-nm-2/",
+  "title": {
+    "rendered": "WordCamp Albuquerque, NM"
+  },
+  "content": {
+    "rendered": "",
+    "protected": false
+  },
+  "author": 14799631,
+  "featured_media": 0,
+  "template": "",
+  "Start Date (YYYY-mm-dd)": "1584662400",
+  "End Date (YYYY-mm-dd)": "1584748800",
+  "Location": "Albuquerque, NM",
+  "URL": "https://2020.albuquerque.wordcamp.org",
+  "Twitter": "",
+  "WordCamp Hashtag": "#wordcampabq2020",
+  "Number of Anticipated Attendees": "250",
+  "Organizer Name": "Acacia Carr",
+  "WordPress.org Username": "rockpapercss@gmail.com",
+  "Venue Name": "Central New Mexico Community College (CNM)",
+  "Physical Address": "CNM Main Campus\r\n900 University Blvd. SE \r\nAlbuquerque, NM\r\n87106\r\nUSA",
+  "Maximum Capacity": "250",
+  "Available Rooms": "4",
+  "Website URL": "https://www.cnm.edu/depts/workforce-training/space-solutions#venue-options",
+  "Exhibition Space Available": "1",
+  "_venue_coordinates": {
+    "latitude": 35.0719041,
+    "longitude": -106.6290324
+  },
+  "_venue_city": "Albuquerque",
+  "_venue_state": "New Mexico",
+  "_venue_country_code": "US",
+  "_venue_country_name": "United States",
+  "_venue_zip": "87106",
+  "_links": {
+    "self": [
+      {
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/wordcamps/3095956"
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/wordcamps"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/types/wordcamp"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/users/14799631"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/wordcamps/3095956/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 3095958,
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/wordcamps/3095956/revisions/3095958"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://central.wordcamp.org/wp-json/wp/v2/media?parent=3095956"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

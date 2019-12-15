@@ -1,3 +1,3 @@
-struct WordCampContent: Decodable {
+struct WordCampContent: Decodable, Equatable {
     let rendered: String
 }
