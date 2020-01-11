@@ -6,7 +6,7 @@ import SwiftUI
 struct SchedulePadding: ViewModifier {
     func body(content: Content) -> some View {
         Group {
-            if isIPad() {
+            if shouldApplyPadding() {
                 content.padding()
             } else {
                 content
@@ -16,7 +16,7 @@ struct SchedulePadding: ViewModifier {
 }
 
 private extension SchedulePadding {
-    func isIPad() -> Bool {
+    func shouldApplyPadding() -> Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
 }
