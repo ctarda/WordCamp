@@ -16,12 +16,13 @@ struct ScheduleList: View {
                     .navigationBarTitle(Text("Upcoming WordCamps"))
                 }
             }
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+        .modifier(SchedulePadding())
     }
 
     init(viewModel: WordCampsViewModel<PhoneEventViewModel>) {
         self.viewModel = viewModel
-    }
+    }    
 }
 
 struct ScheduleList_Previews: PreviewProvider {
