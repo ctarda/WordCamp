@@ -15,6 +15,7 @@
 		D8133549235C0BCE0028ACD5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133548235C0BCE0028ACD5 /* LoadingView.swift */; };
 		D813354A235C11790028ACD5 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133546235C0A850028ACD5 /* ActivityIndicator.swift */; };
 		D813354B235C11790028ACD5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8133548235C0BCE0028ACD5 /* LoadingView.swift */; };
+		D8236D3823C9BBE400725B92 /* SchedulePadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8236D3723C9BBE400725B92 /* SchedulePadding.swift */; };
 		D824CD582336439C00437CC9 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D824CD572336439C00437CC9 /* SearchBarView.swift */; };
 		D83310C823A5DB3100F452D4 /* WordCampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83310C723A5DB3100F452D4 /* WordCampTests.swift */; };
 		D83310CC23A5DBAE00F452D4 /* wordcamp.json in Resources */ = {isa = PBXBuildFile; fileRef = D83310CB23A5DBAE00F452D4 /* wordcamp.json */; };
@@ -171,6 +172,7 @@
 		D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D8133546235C0A850028ACD5 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D8133548235C0BCE0028ACD5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D8236D3723C9BBE400725B92 /* SchedulePadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulePadding.swift; sourceTree = "<group>"; };
 		D824CD572336439C00437CC9 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		D83310C723A5DB3100F452D4 /* WordCampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WordCampTests.swift; path = WordCampTests/Model/WordCampTests.swift; sourceTree = SOURCE_ROOT; };
 		D83310CB23A5DBAE00F452D4 /* wordcamp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = wordcamp.json; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 			children = (
 				D8EDF13523598D7D0088E84B /* Details View */,
 				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
+				D8236D3723C9BBE400725B92 /* SchedulePadding.swift */,
 				D8D7D009232D928800687E4B /* MapView.swift */,
 				D8D7D014232D991400687E4B /* WordCampListView.swift */,
 				D8D7D016232D9BB400687E4B /* SafariView.swift */,
@@ -896,6 +899,7 @@
 				D8EEA5EA2331A075006C32D0 /* WordCampService.swift in Sources */,
 				D8113CEC232FE28B004DD6A4 /* PhoneEventViewModel.swift in Sources */,
 				D8133547235C0A850028ACD5 /* ActivityIndicator.swift in Sources */,
+				D8236D3823C9BBE400725B92 /* SchedulePadding.swift in Sources */,
 				D8D42EBB235B245500C4201B /* EventViewModel.swift in Sources */,
 				D83310CE23A5DC3500F452D4 /* Loader.swift in Sources */,
 				D8D7CFDE232D648300687E4B /* ScheduleList.swift in Sources */,
