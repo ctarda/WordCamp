@@ -7,7 +7,7 @@ struct SchedulePadding: ViewModifier {
     func body(content: Content) -> some View {
         Group {
             if shouldApplyPadding() {
-                content.padding()
+                content.padding(.all, 0.5)
             } else {
                 content
             }
