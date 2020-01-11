@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,7 +37,7 @@
 		D8D42E79235B141C00C4201B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42E78235B141C00C4201B /* ComplicationController.swift */; };
 		D8D42E7B235B141D00C4201B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D42E7A235B141D00C4201B /* Assets.xcassets */; };
 		D8D42E7E235B141D00C4201B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D42E7D235B141D00C4201B /* Preview Assets.xcassets */; };
-		D8D42E83235B141D00C4201B /* WordCampsWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D8D42E5D235B141A00C4201B /* WordCampsWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D8D42E83235B141D00C4201B /* WordCampsWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D8D42E5D235B141A00C4201B /* WordCampsWatch.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D8D42E8F235B152300C4201B /* WatchScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D42E8E235B152300C4201B /* WatchScheduleList.swift */; };
 		D8D42E9B235B183500C4201B /* WordCampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5E92331A075006C32D0 /* WordCampService.swift */; };
 		D8D42E9C235B183500C4201B /* DefaultWordCampService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D01E232E6CB100687E4B /* DefaultWordCampService.swift */; };
@@ -182,6 +182,7 @@
 		D8577DA9239F6FBC00EB6AA0 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		D8577DAB239F718900EB6AA0 /* ShareLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareLinkButton.swift; sourceTree = "<group>"; };
 		D85EABC5239A2E3C005FD940 /* WatchLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchLoadingView.swift; sourceTree = "<group>"; };
+		D8D3DC5223C9CB1600E85328 /* WordCamps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordCamps.entitlements; sourceTree = "<group>"; };
 		D8D42E5D235B141A00C4201B /* WordCampsWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCampsWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D42E60235B141A00C4201B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		D8D42E62235B141C00C4201B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 		D8D7CFCD232D648300687E4B = {
 			isa = PBXGroup;
 			children = (
+				D8D3DC5223C9CB1600E85328 /* WordCamps.entitlements */,
 				D8D42ED9235B3F3B00C4201B /* Shared code */,
 				D8D7CFD8232D648300687E4B /* WordCamp */,
 				D8D7CFEF232D648600687E4B /* WordCampTests */,
@@ -941,6 +943,7 @@
 		};
 		D8D42E82235B141D00C4201B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = D8D42E5C235B141A00C4201B /* WordCampsWatch */;
 			targetProxy = D8D42E81235B141D00C4201B /* PBXContainerItemProxy */;
 		};
@@ -993,7 +996,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				IBSC_MODULE = WordCampsWatch_Extension;
 				INFOPLIST_FILE = WordCampsWatch/Info.plist;
@@ -1013,7 +1016,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				IBSC_MODULE = WordCampsWatch_Extension;
 				INFOPLIST_FILE = WordCampsWatch/Info.plist;
@@ -1032,7 +1035,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCampsWatch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1057,7 +1060,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCampsWatch Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1082,7 +1085,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCampsTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1105,7 +1108,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCampsTV/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1241,8 +1244,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WordCamps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1253,6 +1258,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.wordcamps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1262,8 +1268,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WordCamps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"WordCamp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UD4LXU79B;
 				ENABLE_PREVIEWS = YES;
@@ -1274,6 +1282,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.wordcamps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
