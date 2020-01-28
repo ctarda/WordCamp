@@ -1,6 +1,9 @@
 import Foundation
 import Combine
 
+/**
+ An ObservableObject that downloads the contents of a URL
+ */
 final class RemoteImage: ObservableObject {
     var objectWillChange = PassthroughSubject<RemoteImage, Never>()
 
