@@ -11,7 +11,7 @@ jobs:
       - name: Generate Documentation
         uses: SwiftDocOrg/swift-doc@master
         with:
-          inputs: "['WordCamp', 'Shared code']"
+          inputs: "['WordCamp', 'Shared code', 'Shared code/Model']"
           output: "Documentation"
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@master
