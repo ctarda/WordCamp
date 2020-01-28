@@ -11,6 +11,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: iPhone 11 Test
-      run: xcodebuild test -scheme WordCamp -project WordCamps.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 11,OS=13.3'
+      run: xcodebuild test -scheme WordCamp -project WordCamps.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 11'
     - name: Swift Doc
       uses: SwiftDocOrg/swift-doc@0.0.1      
