@@ -39,6 +39,8 @@ Data obtained from the data transfer layer is prepared for presentation in `Word
 The list of WordCamps is rendered by `ScheduleList`, with each individual "cell" rendered by `WordCampListView` and the individual WordCamp details view is rendered by `WordCampDetail`
 
 [![Build Status](https://travis-ci.org/ctarda/WordCamp.svg?branch=master)](https://travis-ci.org/ctarda/WordCamp)
+![Tests](https://github.com/ctarda/WordCamp/workflows/Swift/badge.svg)
+![Documentation](https://github.com/ctarda/WordCamp/workflows/Documentation/badge.svg)
 
 
 
