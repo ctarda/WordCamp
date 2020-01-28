@@ -1,5 +1,9 @@
 import SwiftUI
 
+/**
+ View rendering a RemoteImageview masked in a circle with border
+ - SeeAlso: RemoteImageView
+ */
 struct CircleImage: View {
     let url: String
 

@@ -1,5 +1,8 @@
 import Foundation
 
+/**
+ Models a single WordCamp.
+ */
 struct WordCamp: Decodable, Identifiable {
     let id: Int
     let title: WordCampTitle
