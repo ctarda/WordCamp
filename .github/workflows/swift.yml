@@ -1,0 +1,14 @@
+name: Swift
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: iPhone 11 Test
+      run: xcodebuild test -scheme WordCamp -project WordCamps.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 11'
