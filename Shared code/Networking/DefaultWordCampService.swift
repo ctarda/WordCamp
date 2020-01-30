@@ -1,6 +1,9 @@
 import Foundation
 import Combine
 
+/**
+ Default implementation of the WordCampService.
+ */
 final class DefaultWordCampService: WordCampService {
     private let session: URLSession
     private let decoder: JSONDecoder
