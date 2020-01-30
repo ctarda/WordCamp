@@ -1,5 +1,8 @@
 import CoreLocation
 
+/**
+ Models a venue's location
+ */
 struct VenueCoordinates: Decodable {
     let latitude: Double
     let longitude: Double
