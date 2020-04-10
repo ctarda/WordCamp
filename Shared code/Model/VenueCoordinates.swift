@@ -19,3 +19,27 @@ extension VenueCoordinates {
             longitude: longitude)
     }
 }
+
+// MARK:- Decodable
+extension VenueCoordinates {
+    enum CodingKeys: String, CodingKey {
+        case latitude = "latitude"
+        case longitude = "longitude"
+    }
+
+    init(from decoder: Decoder) throws {
+        do {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            
+            let latitude = try container.decodeIfPresent(Double.self, forKey: .latitude) ?? 0
+            let longitude = try container.decodeIfPresent(Double.self, forKey: .longitude) ?? 0
+            
+            
+            self.init(latitude: latitude,
+                      longitude: longitude)
+        } catch {
+            self.init(latitude: 0.0, longitude: 0.0)
+        }
+    }
+
+}
