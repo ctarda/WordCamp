@@ -105,6 +105,32 @@
 		D8D7D022232E6DEB00687E4B /* WordCampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */; };
 		D8D7D02C232EBF9000687E4B /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D7D02B232EBF9000687E4B /* Media.swift */; };
 		D8DBEEE62440298C00661BE4 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEE52440298C00661BE4 /* Tabs.swift */; };
+		D8DBEEF62441CF6900661BE4 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF02441CF6900661BE4 /* HomeContentView.swift */; };
+		D8DBEEF72441CF6900661BE4 /* NewVideosSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF12441CF6900661BE4 /* NewVideosSection.swift */; };
+		D8DBEEF82441CF6900661BE4 /* MenuPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF22441CF6900661BE4 /* MenuPadding.swift */; };
+		D8DBEEF92441CF6900661BE4 /* RecentVideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */; };
+		D8DBEEFA2441CF6900661BE4 /* HomeMenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF42441CF6900661BE4 /* HomeMenuSection.swift */; };
+		D8DBEEFB2441CF6900661BE4 /* PopularVideosSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEF52441CF6900661BE4 /* PopularVideosSection.swift */; };
+		D8DBEF022441CF7900661BE4 /* AllCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEFC2441CF7800661BE4 /* AllCategoriesListView.swift */; };
+		D8DBEF032441CF7900661BE4 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEFD2441CF7800661BE4 /* CategoryListView.swift */; };
+		D8DBEF042441CF7900661BE4 /* AllVideoEventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEEFE2441CF7800661BE4 /* AllVideoEventsListView.swift */; };
+		D8DBEF062441CF7900661BE4 /* VideoEventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF002441CF7900661BE4 /* VideoEventDetailsView.swift */; };
+		D8DBEF072441CF7900661BE4 /* VideoEventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF012441CF7900661BE4 /* VideoEventListView.swift */; };
+		D8DBEF112441CF8F00661BE4 /* ApplicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF092441CF8F00661BE4 /* ApplicationViewModel.swift */; };
+		D8DBEF122441CF8F00661BE4 /* AllVideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0A2441CF8F00661BE4 /* AllVideosViewModel.swift */; };
+		D8DBEF132441CF8F00661BE4 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0B2441CF8F00661BE4 /* CategoryViewModel.swift */; };
+		D8DBEF142441CF8F00661BE4 /* AllVideoEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0C2441CF8F00661BE4 /* AllVideoEventsViewModel.swift */; };
+		D8DBEF152441CF8F00661BE4 /* VideoEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0D2441CF8F00661BE4 /* VideoEventViewModel.swift */; };
+		D8DBEF162441CF8F00661BE4 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0E2441CF8F00661BE4 /* VideoViewModel.swift */; };
+		D8DBEF172441CF8F00661BE4 /* PopularVideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF0F2441CF8F00661BE4 /* PopularVideosViewModel.swift */; };
+		D8DBEF182441CF8F00661BE4 /* AllCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF102441CF8F00661BE4 /* AllCategoriesViewModel.swift */; };
+		D8DBEF202441CFA400661BE4 /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1A2441CFA400661BE4 /* CategoryList.swift */; };
+		D8DBEF212441CFA400661BE4 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1B2441CFA400661BE4 /* Video.swift */; };
+		D8DBEF222441CFA400661BE4 /* VideoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1C2441CFA400661BE4 /* VideoEvent.swift */; };
+		D8DBEF232441CFA400661BE4 /* VideoEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1D2441CFA400661BE4 /* VideoEventList.swift */; };
+		D8DBEF242441CFA400661BE4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1E2441CFA400661BE4 /* Category.swift */; };
+		D8DBEF252441CFA400661BE4 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF1F2441CFA400661BE4 /* VideoList.swift */; };
+		D8DBEF272441CFAD00661BE4 /* WordPressTVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DBEF262441CFAD00661BE4 /* WordPressTVService.swift */; };
 		D8DE0E1A23A394DD00997FAE /* TwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE0E1923A394DD00997FAE /* TwitterButton.swift */; };
 		D8E2B80A235989B60064A147 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2B809235989B60064A147 /* PreviewData.swift */; };
 		D8EDF13423598D660088E84B /* OpenLinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EDF13323598D660088E84B /* OpenLinkButton.swift */; };
@@ -241,6 +267,32 @@
 		D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampsViewModel.swift; sourceTree = "<group>"; };
 		D8D7D02B232EBF9000687E4B /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		D8DBEEE52440298C00661BE4 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tabs.swift; path = View/Tabs.swift; sourceTree = "<group>"; };
+		D8DBEEF02441CF6900661BE4 /* HomeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		D8DBEEF12441CF6900661BE4 /* NewVideosSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVideosSection.swift; sourceTree = "<group>"; };
+		D8DBEEF22441CF6900661BE4 /* MenuPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPadding.swift; sourceTree = "<group>"; };
+		D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentVideoListView.swift; sourceTree = "<group>"; };
+		D8DBEEF42441CF6900661BE4 /* HomeMenuSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuSection.swift; sourceTree = "<group>"; };
+		D8DBEEF52441CF6900661BE4 /* PopularVideosSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularVideosSection.swift; sourceTree = "<group>"; };
+		D8DBEEFC2441CF7800661BE4 /* AllCategoriesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCategoriesListView.swift; sourceTree = "<group>"; };
+		D8DBEEFD2441CF7800661BE4 /* CategoryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		D8DBEEFE2441CF7800661BE4 /* AllVideoEventsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllVideoEventsListView.swift; sourceTree = "<group>"; };
+		D8DBEF002441CF7900661BE4 /* VideoEventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEventDetailsView.swift; sourceTree = "<group>"; };
+		D8DBEF012441CF7900661BE4 /* VideoEventListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEventListView.swift; sourceTree = "<group>"; };
+		D8DBEF092441CF8F00661BE4 /* ApplicationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0A2441CF8F00661BE4 /* AllVideosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllVideosViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0B2441CF8F00661BE4 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0C2441CF8F00661BE4 /* AllVideoEventsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllVideoEventsViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0D2441CF8F00661BE4 /* VideoEventViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEventViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0E2441CF8F00661BE4 /* VideoViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF0F2441CF8F00661BE4 /* PopularVideosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularVideosViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF102441CF8F00661BE4 /* AllCategoriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCategoriesViewModel.swift; sourceTree = "<group>"; };
+		D8DBEF1A2441CFA400661BE4 /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
+		D8DBEF1B2441CFA400661BE4 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		D8DBEF1C2441CFA400661BE4 /* VideoEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEvent.swift; sourceTree = "<group>"; };
+		D8DBEF1D2441CFA400661BE4 /* VideoEventList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEventList.swift; sourceTree = "<group>"; };
+		D8DBEF1E2441CFA400661BE4 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D8DBEF1F2441CFA400661BE4 /* VideoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		D8DBEF262441CFAD00661BE4 /* WordPressTVService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordPressTVService.swift; sourceTree = "<group>"; };
 		D8DE0E1923A394DD00997FAE /* TwitterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterButton.swift; sourceTree = "<group>"; };
 		D8E2B809235989B60064A147 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		D8EDF13323598D660088E84B /* OpenLinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLinkButton.swift; sourceTree = "<group>"; };
@@ -422,8 +474,7 @@
 		D8D42EDB235B3F8000C4201B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
-				D84794172365836500C01CAD /* WordCampAnnotation.swift */,
+				D8DBEEEB2441CB8A00661BE4 /* WordCamps */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -532,6 +583,7 @@
 		D8D7CFFB232D654D00687E4B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D8DBEF192441CF9800661BE4 /* WordPressTV */,
 				D8D7D02B232EBF9000687E4B /* Media.swift */,
 			);
 			path = Model;
@@ -540,6 +592,7 @@
 		D8D7CFFE232D699700687E4B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D8DBEF262441CFAD00661BE4 /* WordPressTVService.swift */,
 				D8EEA5F72331ACD8006C32D0 /* MediaService.swift */,
 				D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */,
 				D8113CED232FECA9004DD6A4 /* RemoteImage.swift */,
@@ -550,15 +603,8 @@
 		D8D7D008232D926800687E4B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D8EDF13523598D7D0088E84B /* Details View */,
-				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
-				D8236D3723C9BBE400725B92 /* SchedulePadding.swift */,
-				D8D7D009232D928800687E4B /* MapView.swift */,
-				D8D7D014232D991400687E4B /* WordCampListView.swift */,
-				D8D7D016232D9BB400687E4B /* SafariView.swift */,
-				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
-				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
-				D824CD572336439C00437CC9 /* SearchBarView.swift */,
+				D8DBEEEE2441CF4E00661BE4 /* WordPressTV */,
+				D8DBEEEC2441CEE300661BE4 /* WordCamps */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -574,9 +620,97 @@
 		D8D7D020232E6DC100687E4B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
+				D8DBEF082441CF8300661BE4 /* WordPressTV */,
+				D8DBEEED2441CF1C00661BE4 /* WordCamps */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8DBEEEB2441CB8A00661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
+				D84794172365836500C01CAD /* WordCampAnnotation.swift */,
+			);
+			path = WordCamps;
+			sourceTree = "<group>";
+		};
+		D8DBEEEC2441CEE300661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDF13523598D7D0088E84B /* Details View */,
+				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
+				D8236D3723C9BBE400725B92 /* SchedulePadding.swift */,
+				D8D7D009232D928800687E4B /* MapView.swift */,
+				D8D7D014232D991400687E4B /* WordCampListView.swift */,
+				D8D7D016232D9BB400687E4B /* SafariView.swift */,
+				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
+				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
+				D824CD572336439C00437CC9 /* SearchBarView.swift */,
+			);
+			path = WordCamps;
+			sourceTree = "<group>";
+		};
+		D8DBEEED2441CF1C00661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
+			);
+			path = WordCamps;
+			sourceTree = "<group>";
+		};
+		D8DBEEEE2441CF4E00661BE4 /* WordPressTV */ = {
+			isa = PBXGroup;
+			children = (
+				D8DBEEFC2441CF7800661BE4 /* AllCategoriesListView.swift */,
+				D8DBEEFE2441CF7800661BE4 /* AllVideoEventsListView.swift */,
+				D8DBEEFD2441CF7800661BE4 /* CategoryListView.swift */,
+				D8DBEF002441CF7900661BE4 /* VideoEventDetailsView.swift */,
+				D8DBEF012441CF7900661BE4 /* VideoEventListView.swift */,
+				D8DBEEEF2441CF5A00661BE4 /* Home */,
+			);
+			path = WordPressTV;
+			sourceTree = "<group>";
+		};
+		D8DBEEEF2441CF5A00661BE4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8DBEEF02441CF6900661BE4 /* HomeContentView.swift */,
+				D8DBEEF42441CF6900661BE4 /* HomeMenuSection.swift */,
+				D8DBEEF22441CF6900661BE4 /* MenuPadding.swift */,
+				D8DBEEF12441CF6900661BE4 /* NewVideosSection.swift */,
+				D8DBEEF52441CF6900661BE4 /* PopularVideosSection.swift */,
+				D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D8DBEF082441CF8300661BE4 /* WordPressTV */ = {
+			isa = PBXGroup;
+			children = (
+				D8DBEF102441CF8F00661BE4 /* AllCategoriesViewModel.swift */,
+				D8DBEF0C2441CF8F00661BE4 /* AllVideoEventsViewModel.swift */,
+				D8DBEF0A2441CF8F00661BE4 /* AllVideosViewModel.swift */,
+				D8DBEF092441CF8F00661BE4 /* ApplicationViewModel.swift */,
+				D8DBEF0B2441CF8F00661BE4 /* CategoryViewModel.swift */,
+				D8DBEF0F2441CF8F00661BE4 /* PopularVideosViewModel.swift */,
+				D8DBEF0D2441CF8F00661BE4 /* VideoEventViewModel.swift */,
+				D8DBEF0E2441CF8F00661BE4 /* VideoViewModel.swift */,
+			);
+			path = WordPressTV;
+			sourceTree = "<group>";
+		};
+		D8DBEF192441CF9800661BE4 /* WordPressTV */ = {
+			isa = PBXGroup;
+			children = (
+				D8DBEF1E2441CFA400661BE4 /* Category.swift */,
+				D8DBEF1A2441CFA400661BE4 /* CategoryList.swift */,
+				D8DBEF1B2441CFA400661BE4 /* Video.swift */,
+				D8DBEF1C2441CFA400661BE4 /* VideoEvent.swift */,
+				D8DBEF1D2441CFA400661BE4 /* VideoEventList.swift */,
+				D8DBEF1F2441CFA400661BE4 /* VideoList.swift */,
+			);
+			path = WordPressTV;
 			sourceTree = "<group>";
 		};
 		D8E2B8082359899B0064A147 /* Previews Support */ = {
@@ -886,9 +1020,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8DBEF252441CFA400661BE4 /* VideoList.swift in Sources */,
+				D8DBEF232441CFA400661BE4 /* VideoEventList.swift in Sources */,
+				D8DBEEF92441CF6900661BE4 /* RecentVideoListView.swift in Sources */,
 				D8D7CFDA232D648300687E4B /* AppDelegate.swift in Sources */,
+				D8DBEF242441CFA400661BE4 /* Category.swift in Sources */,
+				D8DBEEF62441CF6900661BE4 /* HomeContentView.swift in Sources */,
 				D8D7D00A232D928800687E4B /* MapView.swift in Sources */,
 				D8D7D00C232D96D100687E4B /* WordCampTitle.swift in Sources */,
+				D8DBEF212441CFA400661BE4 /* Video.swift in Sources */,
 				D8577DAC239F718900EB6AA0 /* ShareLinkButton.swift in Sources */,
 				D8D7CFDC232D648300687E4B /* SceneDelegate.swift in Sources */,
 				D8DBEEE62440298C00661BE4 /* Tabs.swift in Sources */,
@@ -896,33 +1036,53 @@
 				D8EDF13423598D660088E84B /* OpenLinkButton.swift in Sources */,
 				D8E2B80A235989B60064A147 /* PreviewData.swift in Sources */,
 				D8D7CFFD232D657600687E4B /* WordCampList.swift in Sources */,
+				D8DBEEF72441CF6900661BE4 /* NewVideosSection.swift in Sources */,
+				D8DBEF182441CF8F00661BE4 /* AllCategoriesViewModel.swift in Sources */,
 				D824CD582336439C00437CC9 /* SearchBarView.swift in Sources */,
 				D8113CEE232FECA9004DD6A4 /* RemoteImage.swift in Sources */,
 				D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */,
+				D8DBEF062441CF7900661BE4 /* VideoEventDetailsView.swift in Sources */,
 				D8D7D017232D9BB400687E4B /* SafariView.swift in Sources */,
+				D8DBEF272441CFAD00661BE4 /* WordPressTVService.swift in Sources */,
+				D8DBEEF82441CF6900661BE4 /* MenuPadding.swift in Sources */,
 				D8D7D015232D991400687E4B /* WordCampListView.swift in Sources */,
 				D8D7D004232D7B3100687E4B /* Date+WordCamp.swift in Sources */,
+				D8DBEF112441CF8F00661BE4 /* ApplicationViewModel.swift in Sources */,
 				D8EEA5EA2331A075006C32D0 /* WordCampService.swift in Sources */,
 				D8113CEC232FE28B004DD6A4 /* PhoneEventViewModel.swift in Sources */,
 				D8133547235C0A850028ACD5 /* ActivityIndicator.swift in Sources */,
 				D8236D3823C9BBE400725B92 /* SchedulePadding.swift in Sources */,
+				D8DBEEFB2441CF6900661BE4 /* PopularVideosSection.swift in Sources */,
 				D8D42EBB235B245500C4201B /* EventViewModel.swift in Sources */,
 				D83310CE23A5DC3500F452D4 /* Loader.swift in Sources */,
 				D8D7CFDE232D648300687E4B /* ScheduleList.swift in Sources */,
+				D8DBEF222441CFA400661BE4 /* VideoEvent.swift in Sources */,
 				D8D7D010232D980A00687E4B /* WordCamp.swift in Sources */,
 				D8113CF0232FEDA6004DD6A4 /* RemoteImageView.swift in Sources */,
 				D84794182365836500C01CAD /* WordCampAnnotation.swift in Sources */,
 				D8D7D00E232D972800687E4B /* VenueCoordinates.swift in Sources */,
 				D8D7D01B232D9F7000687E4B /* WordCampContent.swift in Sources */,
+				D8DBEF142441CF8F00661BE4 /* AllVideoEventsViewModel.swift in Sources */,
 				D8577DAA239F6FBC00EB6AA0 /* ShareSheet.swift in Sources */,
 				D8D7D013232D98D500687E4B /* WordCampDetail.swift in Sources */,
+				D8DBEF162441CF8F00661BE4 /* VideoViewModel.swift in Sources */,
+				D8DBEF042441CF7900661BE4 /* AllVideoEventsListView.swift in Sources */,
+				D8DBEF172441CF8F00661BE4 /* PopularVideosViewModel.swift in Sources */,
 				D8D7D02C232EBF9000687E4B /* Media.swift in Sources */,
+				D8DBEF022441CF7900661BE4 /* AllCategoriesListView.swift in Sources */,
+				D8DBEF072441CF7900661BE4 /* VideoEventListView.swift in Sources */,
 				D8D7D01F232E6CB100687E4B /* DefaultWordCampService.swift in Sources */,
 				D8113CF2232FF0CB004DD6A4 /* CircleImage.swift in Sources */,
+				D8DBEF032441CF7900661BE4 /* CategoryListView.swift in Sources */,
 				D8EEA5F62331ACC7006C32D0 /* DefaultMediaService.swift in Sources */,
+				D8DBEF122441CF8F00661BE4 /* AllVideosViewModel.swift in Sources */,
 				D8D7D01D232DA0DB00687E4B /* String+WordCamp.swift in Sources */,
+				D8DBEF132441CF8F00661BE4 /* CategoryViewModel.swift in Sources */,
 				D8133549235C0BCE0028ACD5 /* LoadingView.swift in Sources */,
+				D8DBEF152441CF8F00661BE4 /* VideoEventViewModel.swift in Sources */,
+				D8DBEF202441CFA400661BE4 /* CategoryList.swift in Sources */,
 				D8D7D022232E6DEB00687E4B /* WordCampsViewModel.swift in Sources */,
+				D8DBEEFA2441CF6900661BE4 /* HomeMenuSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

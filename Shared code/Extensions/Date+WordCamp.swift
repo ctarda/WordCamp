@@ -23,6 +23,15 @@ extension Date {
     }
 }
 
+extension Date {
+    static let iso8601WithoutTimeZone: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+}
+
 private extension Date {
     func toString(template: String) -> String {
         let format = DateFormatter.dateFormat(fromTemplate: template, options: 0, locale: Locale.current)
