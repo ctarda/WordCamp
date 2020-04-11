@@ -565,7 +565,7 @@
 		D8D7D020232E6DC100687E4B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
+				D8DBEEED2441CF1C00661BE4 /* WordCamps */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -591,6 +591,14 @@
 				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
 				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
 				D824CD572336439C00437CC9 /* SearchBarView.swift */,
+			);
+			path = WordCamps;
+			sourceTree = "<group>";
+		};
+		D8DBEEED2441CF1C00661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
 			);
 			path = WordCamps;
 			sourceTree = "<group>";
