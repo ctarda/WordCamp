@@ -422,8 +422,7 @@
 		D8D42EDB235B3F8000C4201B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
-				D84794172365836500C01CAD /* WordCampAnnotation.swift */,
+				D8DBEEEB2441CB8A00661BE4 /* WordCamps */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -577,6 +576,15 @@
 				D8113CEB232FE28B004DD6A4 /* PhoneEventViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D8DBEEEB2441CB8A00661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
+				D84794172365836500C01CAD /* WordCampAnnotation.swift */,
+			);
+			path = WordCamps;
 			sourceTree = "<group>";
 		};
 		D8E2B8082359899B0064A147 /* Previews Support */ = {
