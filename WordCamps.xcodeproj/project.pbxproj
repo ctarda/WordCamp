@@ -549,15 +549,7 @@
 		D8D7D008232D926800687E4B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D8EDF13523598D7D0088E84B /* Details View */,
-				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
-				D8236D3723C9BBE400725B92 /* SchedulePadding.swift */,
-				D8D7D009232D928800687E4B /* MapView.swift */,
-				D8D7D014232D991400687E4B /* WordCampListView.swift */,
-				D8D7D016232D9BB400687E4B /* SafariView.swift */,
-				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
-				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
-				D824CD572336439C00437CC9 /* SearchBarView.swift */,
+				D8DBEEEC2441CEE300661BE4 /* WordCamps */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -583,6 +575,22 @@
 			children = (
 				D8D7D021232E6DEB00687E4B /* WordCampsViewModel.swift */,
 				D84794172365836500C01CAD /* WordCampAnnotation.swift */,
+			);
+			path = WordCamps;
+			sourceTree = "<group>";
+		};
+		D8DBEEEC2441CEE300661BE4 /* WordCamps */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDF13523598D7D0088E84B /* Details View */,
+				D8D7CFDD232D648300687E4B /* ScheduleList.swift */,
+				D8236D3723C9BBE400725B92 /* SchedulePadding.swift */,
+				D8D7D009232D928800687E4B /* MapView.swift */,
+				D8D7D014232D991400687E4B /* WordCampListView.swift */,
+				D8D7D016232D9BB400687E4B /* SafariView.swift */,
+				D8113CEF232FEDA6004DD6A4 /* RemoteImageView.swift */,
+				D8113CF1232FF0CB004DD6A4 /* CircleImage.swift */,
+				D824CD572336439C00437CC9 /* SearchBarView.swift */,
 			);
 			path = WordCamps;
 			sourceTree = "<group>";
