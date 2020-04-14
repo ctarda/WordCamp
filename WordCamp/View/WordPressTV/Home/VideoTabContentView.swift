@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeContentView: View {
+struct VideoTabContentView: View {
     @ObservedObject var viewModel: ApplicationViewModel
 
     var body: some View {
