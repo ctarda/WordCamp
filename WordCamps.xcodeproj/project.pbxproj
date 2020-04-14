@@ -142,6 +142,7 @@
 		D8EEA5F62331ACC7006C32D0 /* DefaultMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */; };
 		D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F72331ACD8006C32D0 /* MediaService.swift */; };
 		D8F0C0672445A7EA008F5B09 /* NewVideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */; };
+		D8F0C0692445A9BB008F5B09 /* NewVideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -305,6 +306,7 @@
 		D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMediaService.swift; sourceTree = "<group>"; };
 		D8EEA5F72331ACD8006C32D0 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoListView.swift; sourceTree = "<group>"; };
+		D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -684,6 +686,7 @@
 				D8DBEEF52441CF6900661BE4 /* PopularVideosSection.swift */,
 				D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */,
 				D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */,
+				D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1046,6 +1049,7 @@
 				D8113CEE232FECA9004DD6A4 /* RemoteImage.swift in Sources */,
 				D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */,
 				D8DBEF062441CF7900661BE4 /* VideoEventDetailsView.swift in Sources */,
+				D8F0C0692445A9BB008F5B09 /* NewVideoDetailsView.swift in Sources */,
 				D8D7D017232D9BB400687E4B /* SafariView.swift in Sources */,
 				D8DBEF272441CFAD00661BE4 /* WordPressTVService.swift in Sources */,
 				D8DBEEF82441CF6900661BE4 /* MenuPadding.swift in Sources */,

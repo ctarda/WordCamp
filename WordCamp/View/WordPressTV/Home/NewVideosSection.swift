@@ -6,7 +6,9 @@ struct NewVideosSection: View {
     var body: some View {
         Section(header: Text("Latest Videos")) {
             ForEach(self.allVideosViewModel.videos) { video in
-                NewVideoListView(video: video)
+                NavigationLink(destination: NewVideoDetailsView(video: video)) {
+                    NewVideoListView(video: video)
+                }
             }
         }
     }
