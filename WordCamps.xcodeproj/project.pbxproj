@@ -143,6 +143,7 @@
 		D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F72331ACD8006C32D0 /* MediaService.swift */; };
 		D8F0C0672445A7EA008F5B09 /* NewVideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */; };
 		D8F0C0692445A9BB008F5B09 /* NewVideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */; };
+		D8F0C06B2445AE88008F5B09 /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06A2445AE88008F5B09 /* VideoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -307,6 +308,7 @@
 		D8EEA5F72331ACD8006C32D0 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoListView.swift; sourceTree = "<group>"; };
 		D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoDetailsView.swift; sourceTree = "<group>"; };
+		D8F0C06A2445AE88008F5B09 /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -715,6 +717,7 @@
 				D8DBEF1C2441CFA400661BE4 /* VideoEvent.swift */,
 				D8DBEF1D2441CFA400661BE4 /* VideoEventList.swift */,
 				D8DBEF1F2441CFA400661BE4 /* VideoList.swift */,
+				D8F0C06A2445AE88008F5B09 /* VideoItem.swift */,
 			);
 			path = WordPressTV;
 			sourceTree = "<group>";
@@ -1029,6 +1032,7 @@
 				D8DBEF252441CFA400661BE4 /* VideoList.swift in Sources */,
 				D8DBEF232441CFA400661BE4 /* VideoEventList.swift in Sources */,
 				D8DBEEF92441CF6900661BE4 /* RecentVideoListView.swift in Sources */,
+				D8F0C06B2445AE88008F5B09 /* VideoItem.swift in Sources */,
 				D8D7CFDA232D648300687E4B /* AppDelegate.swift in Sources */,
 				D8DBEF242441CFA400661BE4 /* Category.swift in Sources */,
 				D8DBEEF62441CF6900661BE4 /* VideoTabContentView.swift in Sources */,

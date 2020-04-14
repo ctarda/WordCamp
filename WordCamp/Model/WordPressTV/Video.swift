@@ -6,17 +6,20 @@ struct Video: Decodable, Identifiable {
     let description: String
     let date: Date
     let thumbnail: String
+    let videoItems: VideoItems
 
     init(id: String,
          title: String,
          description: String,
          date: Date,
-         thumbnail: String) {
+         thumbnail: String,
+         videoItems: VideoItems) {
         self.id = id
         self.title = title
         self.description = description
         self.date = date
         self.thumbnail = thumbnail
+        self.videoItems = videoItems
     }
 }
 
@@ -28,6 +31,7 @@ extension Video {
         case description
         case date
         case thumbnail
+        case video
     }
 
     init(from decoder: Decoder) throws {
@@ -40,12 +44,15 @@ extension Video {
         let date = try container.decodeIfPresent(Date.self, forKey: .date) ?? Date()
 
         let thumbnail = try container.decode(String.self, forKey: .thumbnail)
+        
+        let videoItems = try container.decode(VideoItems.self, forKey: .video)
 
         self.init(id: id,
                   title: title,
                   description: description,
                   date: date,
-                  thumbnail: thumbnail)
+                  thumbnail: thumbnail,
+                  videoItems: videoItems)
     }
 }
 
