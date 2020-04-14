@@ -145,6 +145,7 @@
 		D8F0C0692445A9BB008F5B09 /* NewVideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */; };
 		D8F0C06B2445AE88008F5B09 /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06A2445AE88008F5B09 /* VideoItem.swift */; };
 		D8F0C06D2445B976008F5B09 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06C2445B976008F5B09 /* VideoPlayer.swift */; };
+		D8F0C06F2445BCEB008F5B09 /* OpenVideoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06E2445BCEB008F5B09 /* OpenVideoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +312,7 @@
 		D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoDetailsView.swift; sourceTree = "<group>"; };
 		D8F0C06A2445AE88008F5B09 /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
 		D8F0C06C2445B976008F5B09 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		D8F0C06E2445BCEB008F5B09 /* OpenVideoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenVideoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -692,6 +694,7 @@
 				D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */,
 				D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */,
 				D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */,
+				D8F0C06E2445BCEB008F5B09 /* OpenVideoButton.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1085,6 +1088,7 @@
 				D8DBEF042441CF7900661BE4 /* AllVideoEventsListView.swift in Sources */,
 				D8DBEF172441CF8F00661BE4 /* PopularVideosViewModel.swift in Sources */,
 				D8D7D02C232EBF9000687E4B /* Media.swift in Sources */,
+				D8F0C06F2445BCEB008F5B09 /* OpenVideoButton.swift in Sources */,
 				D8DBEF022441CF7900661BE4 /* AllCategoriesListView.swift in Sources */,
 				D8DBEF072441CF7900661BE4 /* VideoEventListView.swift in Sources */,
 				D8D7D01F232E6CB100687E4B /* DefaultWordCampService.swift in Sources */,
