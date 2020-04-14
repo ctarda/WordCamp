@@ -17,7 +17,7 @@ struct Tabs: View {
                     Text("Events")
             }
             
-            HomeContentView(viewModel: ApplicationViewModel())
+            VideoTabContentView(viewModel: ApplicationViewModel())
                 .tabItem {
                 Image(systemName: "tv")
                 Text("Videos")
