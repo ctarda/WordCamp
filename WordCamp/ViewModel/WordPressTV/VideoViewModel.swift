@@ -20,4 +20,8 @@ extension VideoViewModel {
     var description: String {
         return video.description
     }
+    
+    var videoURL: URL {
+        return URL(string: video.videoItems.videoItems.mediumURL)!
+    }
 }
