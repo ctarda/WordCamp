@@ -11,15 +11,22 @@ import SwiftUI
 struct NewVideoDetailsView: View {
     let video: VideoViewModel
     var body: some View {
-        VStack(alignment: .leading) {
-            RemoteImageView(imageURL: video.thumbnail)
-                .frame(height: CGFloat(200), alignment: .center)
-            
-            Divider()
-            
-            Text(video.title)
-                .font(.title)
-                .lineLimit(2)
-        }.padding()
+        ScrollView {
+            VStack(alignment: .leading) {
+                RemoteImageView(imageURL: video.thumbnail)
+                    .frame(height: CGFloat(200), alignment: .center)
+                
+                Divider()
+                
+                Text(video.title)
+                    .font(.title)
+                    .lineLimit(2)
+                
+                Divider()
+                
+                Text(video.description)
+                
+            }.padding()
+        }
     }
 }

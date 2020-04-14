@@ -16,5 +16,8 @@ extension VideoViewModel {
     var thumbnail: String {
         return video.thumbnail
     }
-
+    
+    var description: String {
+        return video.description
+    }
 }
