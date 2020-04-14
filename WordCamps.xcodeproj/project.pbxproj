@@ -141,6 +141,7 @@
 		D8EEA5F22331AB55006C32D0 /* WordCampDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F12331AB55006C32D0 /* WordCampDetailTests.swift */; };
 		D8EEA5F62331ACC7006C32D0 /* DefaultMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */; };
 		D8EEA5F82331ACD8006C32D0 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8EEA5F72331ACD8006C32D0 /* MediaService.swift */; };
+		D8F0C0672445A7EA008F5B09 /* NewVideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -303,6 +304,7 @@
 		D8EEA5F12331AB55006C32D0 /* WordCampDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCampDetailTests.swift; sourceTree = "<group>"; };
 		D8EEA5F52331ACC7006C32D0 /* DefaultMediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMediaService.swift; sourceTree = "<group>"; };
 		D8EEA5F72331ACD8006C32D0 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -681,6 +683,7 @@
 				D8DBEEF12441CF6900661BE4 /* NewVideosSection.swift */,
 				D8DBEEF52441CF6900661BE4 /* PopularVideosSection.swift */,
 				D8DBEEF32441CF6900661BE4 /* RecentVideoListView.swift */,
+				D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1034,6 +1037,7 @@
 				D8DBEEE62440298C00661BE4 /* Tabs.swift in Sources */,
 				D8DE0E1A23A394DD00997FAE /* TwitterButton.swift in Sources */,
 				D8EDF13423598D660088E84B /* OpenLinkButton.swift in Sources */,
+				D8F0C0672445A7EA008F5B09 /* NewVideoListView.swift in Sources */,
 				D8E2B80A235989B60064A147 /* PreviewData.swift in Sources */,
 				D8D7CFFD232D657600687E4B /* WordCampList.swift in Sources */,
 				D8DBEEF72441CF6900661BE4 /* NewVideosSection.swift in Sources */,
