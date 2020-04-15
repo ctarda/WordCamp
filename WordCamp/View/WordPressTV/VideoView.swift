@@ -9,6 +9,43 @@
 import SwiftUI
 import AVFoundation
 
+struct VideoCardTestView: View {
+    @State var maxHeight:CGFloat = 200
+    let video: VideoViewModel
+    
+    var body: some View {
+        VStack{
+            VideoView(url: video.videoURL)
+                .cornerRadius(15)
+                .frame(width: nil, height: maxHeight, alignment: .center)
+                .shadow(color: Color.black.opacity(0.7), radius: 30, x: 0, y: 2)
+                .padding(.horizontal, 20)
+                .padding(.top, 20)
+
+            Spacer()            
+        }
+    }
+}
+
+struct VideoCard: View {
+    @State var videoURL:URL
+    @State var showPlayIcon:Bool
+    
+    var body: some View {
+        ZStack {
+            VideoView(url: videoURL)
+            if showPlayIcon {
+                Image(systemName: "play.circle.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(minWidth: 20, idealWidth: 40, maxWidth: 40, minHeight: 20, idealHeight: 40, maxHeight: 40, alignment: .center)
+                .foregroundColor(Color.white)
+            }
+            
+        }
+    }
+}
+
 struct VideoView: UIViewRepresentable {
     let url: URL
     

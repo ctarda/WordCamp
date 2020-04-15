@@ -144,7 +144,7 @@
 		D8F0C0672445A7EA008F5B09 /* NewVideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */; };
 		D8F0C0692445A9BB008F5B09 /* NewVideoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */; };
 		D8F0C06B2445AE88008F5B09 /* VideoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06A2445AE88008F5B09 /* VideoItem.swift */; };
-		D8F0C06D2445B976008F5B09 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06C2445B976008F5B09 /* VideoPlayer.swift */; };
+		D8F0C06D2445B976008F5B09 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06C2445B976008F5B09 /* VideoView.swift */; };
 		D8F0C06F2445BCEB008F5B09 /* OpenVideoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F0C06E2445BCEB008F5B09 /* OpenVideoButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -311,7 +311,7 @@
 		D8F0C0662445A7EA008F5B09 /* NewVideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoListView.swift; sourceTree = "<group>"; };
 		D8F0C0682445A9BB008F5B09 /* NewVideoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVideoDetailsView.swift; sourceTree = "<group>"; };
 		D8F0C06A2445AE88008F5B09 /* VideoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoItem.swift; sourceTree = "<group>"; };
-		D8F0C06C2445B976008F5B09 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		D8F0C06C2445B976008F5B09 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		D8F0C06E2445BCEB008F5B09 /* OpenVideoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenVideoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -678,7 +678,7 @@
 				D8DBEF002441CF7900661BE4 /* VideoEventDetailsView.swift */,
 				D8DBEF012441CF7900661BE4 /* VideoEventListView.swift */,
 				D8DBEEEF2441CF5A00661BE4 /* Home */,
-				D8F0C06C2445B976008F5B09 /* VideoPlayer.swift */,
+				D8F0C06C2445B976008F5B09 /* VideoView.swift */,
 			);
 			path = WordPressTV;
 			sourceTree = "<group>";
@@ -1046,7 +1046,7 @@
 				D8D7D00C232D96D100687E4B /* WordCampTitle.swift in Sources */,
 				D8DBEF212441CFA400661BE4 /* Video.swift in Sources */,
 				D8577DAC239F718900EB6AA0 /* ShareLinkButton.swift in Sources */,
-				D8F0C06D2445B976008F5B09 /* VideoPlayer.swift in Sources */,
+				D8F0C06D2445B976008F5B09 /* VideoView.swift in Sources */,
 				D8D7CFDC232D648300687E4B /* SceneDelegate.swift in Sources */,
 				D8DBEEE62440298C00661BE4 /* Tabs.swift in Sources */,
 				D8DE0E1A23A394DD00997FAE /* TwitterButton.swift in Sources */,

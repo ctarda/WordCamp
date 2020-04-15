@@ -14,11 +14,7 @@ struct NewVideoDetailsView: View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    RemoteImageView(imageURL: video.thumbnail)
-                        .frame(height: CGFloat(200), alignment: .center)
-                        .overlay(Image(systemName: "tv"), alignment: .center)
-                    
-                    Divider()
+                    VideoCardTestView(maxHeight: 200, video: video)
                     
                     Text(video.title)
                         .font(.title)
