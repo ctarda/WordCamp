@@ -8,11 +8,19 @@
 
 import SwiftUI
 import AVFoundation
+import AVKit
 
 struct VideoPreviewView: View {
     @State var maxHeight:CGFloat = 200
     let video: VideoViewModel
     @State var showPlayIcon:Bool
+    @EnvironmentObject var playerState : PlayerState
+    @State private var showVideoPlayer = false
+    
+    private var tap: some Gesture {
+        TapGesture(count: 1)
+            .onEnded { _ in self.showVideoPlayer = !self.showVideoPlayer }
+    }
     
     var body: some View {
         VStack {
@@ -23,16 +31,20 @@ struct VideoPreviewView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
             if showPlayIcon {
-                Image(systemName: "play.circle.fill")
-                .resizable()
-                .scaledToFit()
-                    .frame(width: 40, height: 40, alignment: .center)
-                .offset(x: 0, y: -1 * (maxHeight / 2) - 20)
-                .foregroundColor(Color.white)
+                    Image(systemName: "play.circle.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .offset(x: 0, y: -1 * (maxHeight / 2) - 20)
+                        .foregroundColor(Color.white)
             }
-        }.onTapGesture {
-            print("=== launching full screen player")
-        }
+        }.gesture(tap)
+        .sheet(isPresented: self.$showVideoPlayer, onDismiss: { self.playerState.currentPlayer?.pause() }) {
+            AVPlayerView(videoURL: self.video.videoURL)
+                 .edgesIgnoringSafeArea(.all)
+                 .environmentObject(self.playerState)
+         }
+
     }
 }
 
@@ -102,5 +114,43 @@ final class PlayerUIView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
+    }
+}
+
+
+struct AVPlayerView: UIViewControllerRepresentable {
+    let videoURL: URL
+    @EnvironmentObject var playerState : PlayerState
+
+    private var player: AVPlayer {
+        return AVPlayer(url: videoURL)
+    }
+
+    func updateUIViewController(_ playerController: AVPlayerViewController, context: Context) {
+        playerController.player = player
+        playerController.player?.play()
+    }
+
+    func makeUIViewController(context: Context) -> AVPlayerViewController {
+        let playerController = AVPlayerViewController()
+        playerController.modalPresentationStyle = .fullScreen
+        playerController.player = playerState.player(for: videoURL)
+        playerController.player?.play()
+        return playerController
+    }
+}
+
+final class PlayerState: ObservableObject {
+
+    public var currentPlayer: AVPlayer?
+    private var videoUrl : URL?
+
+    public func player(for url: URL) -> AVPlayer {
+        if let player = currentPlayer, url == videoUrl {
+            return player
+        }
+        currentPlayer = AVPlayer(url: url)
+        videoUrl = url
+        return currentPlayer!
     }
 }
