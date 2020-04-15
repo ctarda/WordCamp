@@ -6,7 +6,7 @@ struct VideoTabContentView: View {
     var body: some View {
         NavigationView {
             List {
-                viewModel.menuSection
+                //viewModel.menuSection
                 viewModel.newVideosSection
             }
             .navigationBarTitle(Text("Videos"))
