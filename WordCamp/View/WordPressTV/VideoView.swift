@@ -12,15 +12,24 @@ import AVFoundation
 struct VideoPreviewView: View {
     @State var maxHeight:CGFloat = 200
     let video: VideoViewModel
+    @State var showPlayIcon:Bool
     
     var body: some View {
-        VStack{
+        VStack {
             VideoView(url: video.videoURL, volume: 0)
                 .cornerRadius(15)
                 .frame(width: nil, height: maxHeight, alignment: .center)
                 .shadow(color: Color.black.opacity(0.7), radius: 10, x: 0, y: 2)
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
+            if showPlayIcon {
+                Image(systemName: "play.circle.fill")
+                .resizable()
+                .scaledToFit()
+                    .frame(width: 40, height: 40, alignment: .center)
+                .offset(x: 0, y: -1 * (maxHeight / 2) - 20)
+                .foregroundColor(Color.white)
+            }
         }
     }
 }

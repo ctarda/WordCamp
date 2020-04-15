@@ -14,7 +14,7 @@ struct NewVideoDetailsView: View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    VideoPreviewView(maxHeight: 200, video: video)
+                    VideoPreviewView(maxHeight: 200, video: video, showPlayIcon: true)
                     
                     Text(video.title)
                         .font(.title)
