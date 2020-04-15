@@ -18,7 +18,7 @@ struct VideoPreviewView: View {
             VideoView(url: video.videoURL, volume: 0)
                 .cornerRadius(15)
                 .frame(width: nil, height: maxHeight, alignment: .center)
-                .shadow(color: Color.black.opacity(0.7), radius: 30, x: 0, y: 2)
+                .shadow(color: Color.black.opacity(0.7), radius: 10, x: 0, y: 2)
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
         }
@@ -38,7 +38,7 @@ struct VideoCard: View {
                 .scaledToFit()
                 .frame(minWidth: 20, idealWidth: 40, maxWidth: 40, minHeight: 20, idealHeight: 40, maxHeight: 40, alignment: .center)
                 .foregroundColor(Color.white)
-            }            
+            }
         }
     }
 }
@@ -91,5 +91,5 @@ final class PlayerUIView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         playerLayer.frame = bounds
-    }    
+    }
 }
