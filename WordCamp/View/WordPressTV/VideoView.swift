@@ -15,14 +15,14 @@ struct VideoPreviewView: View {
     
     var body: some View {
         VStack{
-            VideoView(url: video.videoURL)
+            VideoView(url: video.videoURL, volume: 0)
                 .cornerRadius(15)
                 .frame(width: nil, height: maxHeight, alignment: .center)
                 .shadow(color: Color.black.opacity(0.7), radius: 30, x: 0, y: 2)
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
 
-            Spacer()            
+            Spacer()
         }
     }
 }
@@ -33,7 +33,7 @@ struct VideoCard: View {
     
     var body: some View {
         ZStack {
-            VideoView(url: videoURL)
+            VideoView(url: videoURL, volume: 0)
             if showPlayIcon {
                 Image(systemName: "play.circle.fill")
                 .resizable()
@@ -48,6 +48,7 @@ struct VideoCard: View {
 
 struct VideoView: UIViewRepresentable {
     let url: URL
+    let volume: Float
     
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
@@ -55,23 +56,24 @@ struct VideoView: UIViewRepresentable {
     }
     
     func makeUIView(context: Context) -> some UIView {
-        return PlayerUIView(url: url, previewLength: 15)
+        return PlayerUIView(url: url, previewLength: 15, initialVolume: volume)
     }
 }
 
 final class PlayerUIView: UIView {
     private let playerLayer = AVPlayerLayer()
     private var previewTimer:Timer?
-    var previewLength:Double
+    private let previewLength:Double
     private let url: URL
     
-    init(url: URL, previewLength: Double) {
+    init(url: URL, previewLength: Double, initialVolume: Float) {
         self.url = url
         self.previewLength = previewLength
         super.init(frame: .zero)
         
         let player = AVPlayer(url: url)
         player.play()
+        player.volume = initialVolume
         
         playerLayer.player = player
         playerLayer.videoGravity = .resizeAspectFill
