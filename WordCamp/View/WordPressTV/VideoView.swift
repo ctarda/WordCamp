@@ -9,7 +9,7 @@
 import SwiftUI
 import AVFoundation
 
-struct VideoCardTestView: View {
+struct VideoPreviewView: View {
     @State var maxHeight:CGFloat = 200
     let video: VideoViewModel
     

@@ -14,7 +14,7 @@ struct NewVideoDetailsView: View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    VideoCardTestView(maxHeight: 200, video: video)
+                    VideoPreviewView(maxHeight: 200, video: video)
                     
                     Text(video.title)
                         .font(.title)
@@ -28,6 +28,6 @@ struct NewVideoDetailsView: View {
             }
             
             OpenVideoButton(video: video)
-        }
+        }.navigationBarTitle(Text(video.title), displayMode: .inline)
     }
 }
