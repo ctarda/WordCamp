@@ -30,6 +30,8 @@ struct VideoPreviewView: View {
                 .offset(x: 0, y: -1 * (maxHeight / 2) - 20)
                 .foregroundColor(Color.white)
             }
+        }.onTapGesture {
+            print("=== launching full screen player")
         }
     }
 }

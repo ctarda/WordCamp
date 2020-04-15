@@ -25,9 +25,7 @@ struct NewVideoDetailsView: View {
                     Text(video.description)
                     
                 }.padding()
-            }
-            
-            OpenVideoButton(video: video)
+            }            
         }.navigationBarTitle(Text(video.title), displayMode: .inline)
     }
 }
