@@ -14,11 +14,7 @@ struct NewVideoDetailsView: View {
         VStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    RemoteImageView(imageURL: video.thumbnail)
-                        .frame(height: CGFloat(200), alignment: .center)
-                        .overlay(Image(systemName: "tv"), alignment: .center)
-                    
-                    Divider()
+                    VideoPreviewView(maxHeight: 200, video: video, showPlayIcon: true)
                     
                     Text(video.title)
                         .font(.title)
@@ -29,9 +25,7 @@ struct NewVideoDetailsView: View {
                     Text(video.description)
                     
                 }.padding()
-            }
-            
-            OpenVideoButton(video: video)
-        }
+            }            
+        }.navigationBarTitle(Text(video.title), displayMode: .inline)
     }
 }

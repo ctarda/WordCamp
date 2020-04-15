@@ -9,7 +9,7 @@
 import SwiftUI
 import AVFoundation
 
-struct VideoPlayer: UIViewRepresentable {
+struct VideoView: UIViewRepresentable {
     let url: URL
     
     
@@ -18,22 +18,32 @@ struct VideoPlayer: UIViewRepresentable {
     }
     
     func makeUIView(context: Context) -> some UIView {
-        return PlayerUIView(url: url)
+        return PlayerUIView(url: url, previewLength: 15)
     }
 }
 
 final class PlayerUIView: UIView {
     private let playerLayer = AVPlayerLayer()
+    private var previewTimer:Timer?
+    var previewLength:Double
     private let url: URL
     
-    init(url: URL) {
+    init(url: URL, previewLength: Double) {
         self.url = url
+        self.previewLength = previewLength
         super.init(frame: .zero)
         
         let player = AVPlayer(url: url)
         player.play()
         
         playerLayer.player = player
+        playerLayer.videoGravity = .resizeAspectFill
+        playerLayer.backgroundColor = UIColor.darkText.cgColor
+        
+        previewTimer = Timer.scheduledTimer(withTimeInterval: previewLength, repeats: true, block: { (timer) in
+            player.seek(to: CMTime(seconds: 0, preferredTimescale: CMTimeScale(1)))
+        })
+        
         layer.addSublayer(playerLayer)
         
     }

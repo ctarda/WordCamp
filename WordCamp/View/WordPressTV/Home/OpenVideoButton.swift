@@ -15,18 +15,16 @@ struct OpenVideoButton: View {
 
     var body: some View {
         HStack(alignment: .center) {
-            Spacer()
-
             Button(action: {
                 self.showModal = true
             }) {
                 Text("Open video player")
             }
             .sheet(isPresented: self.$showModal) {
-                VideoPlayer(url: self.video.videoURL)
+                //VideoView(url: self.video.videoURL)
+                VideoCard(videoURL: self.video.videoURL, showPlayIcon: true)
+                //VideoCardTestView(video: self.video)
             }
-
-            Spacer()
         }
     }
 }
